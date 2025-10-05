@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="uk">
+<html lang="ja">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DATAGOD - Intelligence Solutions for UAF</title>
+    <title>DATAGOD - ウクライナ軍向けインテリジェンスソリューション</title>
     
     <!-- Security Headers -->
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://unpkg.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self' data:; connect-src 'self'; frame-ancestors 'none'; base-uri 'self'; form-action 'self';">
@@ -11,7 +11,7 @@
     <meta http-equiv="X-Content-Type-Options" content="nosniff">
     <meta name="referrer" content="strict-origin-when-cross-origin">
     
-    <link rel="stylesheet" href="src/assets/css/styles.css">
+    <link rel="stylesheet" href="../assets/css/styles.css">
     <script src="https://unpkg.com/lucide@0.263.1/dist/umd/lucide.min.js"></script>
 </head>
 <body>
@@ -24,18 +24,18 @@
                     <span>DATAGOD</span>
                 </div>
                 <div class="nav-links">
-                    <a href="#mission" class="nav-link">Місія</a>
-                    <a href="#values" class="nav-link">Цінності</a>
-                    <a href="#tech" class="nav-link">Технології</a>
-                    <a href="#ml-pipeline" class="nav-link">ML Pipeline</a>
-                    <a href="#nato" class="nav-link">Стандарти НАТО</a>
-                    <a href="#capabilities" class="nav-link">Можливості</a>
+                    <a href="#mission" class="nav-link">ミッション</a>
+                    <a href="#values" class="nav-link">価値観</a>
+                    <a href="#tech" class="nav-link">技術</a>
+                    <a href="#ml-pipeline" class="nav-link">MLパイプライン</a>
+                    <a href="#nato" class="nav-link">NATO標準</a>
+                    <a href="#capabilities" class="nav-link">機能</a>
                     <div class="lang-switcher">
                         <i data-lucide="globe"></i>
                         <select id="langSelect" onchange="switchLanguage(this.value)">
+                            <option value="ja">JP</option>
                             <option value="uk">UA</option>
                             <option value="en">EN</option>
-                            <option value="ja">JP</option>
                         </select>
                     </div>
                 </div>
@@ -52,30 +52,30 @@
             <div class="hero-content">
                 <div class="hero-badge">
                     <i data-lucide="shield-check"></i>
-                    <span>Intelligence & Data Analytics</span>
+                    <span>インテリジェンス & データ分析</span>
                 </div>
-                <h1 class="hero-title">Невидимий щит<br>української армії</h1>
-                <p class="hero-description">Превращаем поток данных з передової в тактичне превосходство та врятовані життя. Забезпечуємо ЗСУ інтелектуальними рішеннями на основі даних та машинного навчання.</p>
+                <h1 class="hero-title">ウクライナ軍の<br>見えない盾</h1>
+                <p class="hero-description">前線からのデータストリームを戦術的優位性と救われた命に変換します。データと機械学習に基づいたインテリジェントソリューションでウクライナ軍を支援します。</p>
                 <div class="hero-stats">
                     <div class="stat-item">
                         <i data-lucide="zap"></i>
                         <div class="stat-content">
-                            <div class="stat-value">Real-time</div>
-                            <div class="stat-label">Обробка даних</div>
+                            <div class="stat-value">リアルタイム</div>
+                            <div class="stat-label">データ処理</div>
                         </div>
                     </div>
                     <div class="stat-item">
                         <i data-lucide="cpu"></i>
                         <div class="stat-content">
-                            <div class="stat-value">AI-driven</div>
-                            <div class="stat-label">Аналітика</div>
+                            <div class="stat-value">AI駆動型</div>
+                            <div class="stat-label">分析</div>
                         </div>
                     </div>
                     <div class="stat-item">
                         <i data-lucide="lock"></i>
                         <div class="stat-content">
                             <div class="stat-value">NATO SECRET</div>
-                            <div class="stat-label">Рівень захисту</div>
+                            <div class="stat-label">セキュリティレベル</div>
                         </div>
                     </div>
                 </div>
@@ -89,24 +89,24 @@
             <div class="section-header">
                 <div class="section-badge">
                     <i data-lucide="target"></i>
-                    <span>Місія та Візія</span>
+                    <span>ミッションとビジョン</span>
                 </div>
-                <h2 class="section-title">Наша місія</h2>
+                <h2 class="section-title">私たちのミッション</h2>
             </div>
             <div class="mission-grid">
                 <div class="mission-card">
                     <div class="mission-icon">
                         <i data-lucide="crosshair"></i>
                     </div>
-                    <h3>Місія</h3>
-                    <p>Перетворювати потік даних з передової в тактичне превосходство та врятовані життя. Забезпечуємо ЗСУ інтелектуальними рішеннями на основі даних та машинного навчання.</p>
+                    <h3>ミッション</h3>
+                    <p>前線からのデータストリームを戦術的優位性と救われた命に変換します。データと機械学習に基づいたインテリジェントソリューションでウクライナ軍を支援します。</p>
                 </div>
                 <div class="mission-card">
                     <div class="mission-icon">
                         <i data-lucide="eye"></i>
                     </div>
-                    <h3>Візія</h3>
-                    <p>Стати ключовим невидимим щитом української армії, де кожен дрон, кожен солдат і кожен командир посилений штучним інтелектом.</p>
+                    <h3>ビジョン</h3>
+                    <p>すべてのドローン、すべての兵士、すべての指揮官が敵の行動を予測し、リスクを最小化する人工知能によって強化された、ウクライナ軍の重要な見えない盾となることです。</p>
                 </div>
             </div>
         </div>
@@ -118,45 +118,45 @@
             <div class="section-header">
                 <div class="section-badge">
                     <i data-lucide="compass"></i>
-                    <span>Наші принципи</span>
+                    <span>私たちの原則</span>
                 </div>
-                <h2 class="section-title">Ключові цінності</h2>
+                <h2 class="section-title">コアバリュー</h2>
             </div>
             <div class="values-grid">
                 <div class="value-card">
                     <div class="value-icon">
                         <i data-lucide="gauge"></i>
                     </div>
-                    <h3>Швидкість як стандарт</h3>
-                    <p>Працюємо в темпі, що диктується війною. Впровадження, аналіз та виведення рішень відбуваються в стислі тактичні терміни.</p>
+                    <h3>スピードを標準に</h3>
+                    <p>戦争が指示するペースで活動します。展開、分析、意思決定の提供は圧縮された戦術的時間枠内で行われます。</p>
                 </div>
                 <div class="value-card">
                     <div class="value-icon">
                         <i data-lucide="layers"></i>
                     </div>
-                    <h3>Ситуаційна обізнаність</h3>
-                    <p>Створюємо повну, цілісну картину поля бою з розрізнених даних. Єдина операційна картина в реальному часі.</p>
+                    <h3>状況認識</h3>
+                    <p>断片化されたデータから完全で包括的な戦場の全体像を作成します。リアルタイムの統一された作戦状況図。</p>
                 </div>
                 <div class="value-card">
                     <div class="value-icon">
                         <i data-lucide="microchip"></i>
                     </div>
-                    <h3>Технологічний суверенітет</h3>
-                    <p>Розвиваємо та впроваджуємо передові технології, адаптовані під реалії України, забезпечуючи незалежність.</p>
+                    <h3>技術的主権</h3>
+                    <p>ウクライナの現実に適応した先進技術を開発・展開し、外国のクローズドプラットフォームからの独立を確保します。</p>
                 </div>
                 <div class="value-card">
                     <div class="value-icon">
                         <i data-lucide="shield"></i>
                     </div>
-                    <h3>Безпека та надійність</h3>
-                    <p>Дані та алгоритми захищені за найвищими стандартами. Відмовостійкість наших систем — наш пріоритет.</p>
+                    <h3>セキュリティと信頼性</h3>
+                    <p>データとアルゴリズムは最高水準で保護されています。システムの耐障害性が私たちの優先事項です。</p>
                 </div>
                 <div class="value-card">
                     <div class="value-icon">
                         <i data-lucide="flag"></i>
                     </div>
-                    <h3>Внесок у Перемогу</h3>
-                    <p>Вимірюємо наш успіх не в гігабайтах, а в збережених життях, успішних операціях та ослабленому потенціалі противника.</p>
+                    <h3>勝利への貢献</h3>
+                    <p>私たちの成功はギガバイトではなく、救われた命、成功した作戦、弱体化した敵の潜在能力で測定します。</p>
                 </div>
             </div>
         </div>
@@ -168,58 +168,58 @@
             <div class="section-header">
                 <div class="section-badge">
                     <i data-lucide="radio"></i>
-                    <span>Платформи</span>
+                    <span>プラットフォーム</span>
                 </div>
-                <h2 class="section-title">Типи БПЛА</h2>
-                <p class="section-description">Працюємо з усім спектром безпілотних систем, що використовуються ЗСУ</p>
+                <h2 class="section-title">UAVタイプ</h2>
+                <p class="section-description">ウクライナ軍が使用する無人システムの全スペクトルに対応</p>
             </div>
             <div class="uav-grid">
                 <div class="uav-card">
                     <div class="uav-header">
                         <i data-lucide="move-diagonal"></i>
-                        <h3>FPV-дрони</h3>
-                        <span class="range-badge">Ближній радіус</span>
+                        <h3>FPVドローン</h3>
+                        <span class="range-badge">短距離</span>
                     </div>
                     <ul class="uav-features">
-                        <li><i data-lucide="activity"></i>Телеметрія Betaflight/INAV</li>
-                        <li><i data-lucide="video"></i>Відеопотік в реальному часі</li>
-                        <li><i data-lucide="crosshair"></i>Ураження живої сили та техніки</li>
+                        <li><i data-lucide="activity"></i>Betaflight/INAVテレメトリ</li>
+                        <li><i data-lucide="video"></i>リアルタイム映像配信</li>
+                        <li><i data-lucide="crosshair"></i>人員・車両への攻撃</li>
                     </ul>
                 </div>
                 <div class="uav-card">
                     <div class="uav-header">
                         <i data-lucide="scan"></i>
-                        <h3>Розвідувальні дрони</h3>
-                        <span class="range-badge">Ближній/Середній</span>
+                        <h3>偵察ドローン</h3>
+                        <span class="range-badge">短距離/中距離</span>
                     </div>
                     <ul class="uav-features">
-                        <li><i data-lucide="satellite-dish"></i>Проприетарні дані DJI</li>
-                        <li><i data-lucide="camera"></i>HD-відео з зумом</li>
-                        <li><i data-lucide="map-pin"></i>Розвідка та цілевказівка</li>
+                        <li><i data-lucide="satellite-dish"></i>DJIプロプライエタリデータ</li>
+                        <li><i data-lucide="camera"></i>ズーム付きHD映像</li>
+                        <li><i data-lucide="map-pin"></i>偵察と目標指示</li>
                     </ul>
                 </div>
                 <div class="uav-card">
                     <div class="uav-header">
                         <i data-lucide="hexagon"></i>
-                        <h3>Гексакоптери</h3>
-                        <span class="range-badge">Середній радіус</span>
+                        <h3>ヘキサコプター</h3>
+                        <span class="range-badge">中距離</span>
                     </div>
                     <ul class="uav-features">
-                        <li><i data-lucide="thermometer"></i>Тепловізори та HD-камери</li>
-                        <li><i data-lucide="package"></i>Доставка вантажів</li>
-                        <li><i data-lucide="moon"></i>Нічна розвідка</li>
+                        <li><i data-lucide="thermometer"></i>サーマル＆HDカメラ</li>
+                        <li><i data-lucide="package"></i>貨物配送</li>
+                        <li><i data-lucide="moon"></i>夜間偵察</li>
                     </ul>
                 </div>
                 <div class="uav-card">
                     <div class="uav-header">
                         <i data-lucide="plane"></i>
-                        <h3>Крило-БПЛА</h3>
-                        <span class="range-badge">Середній/Дальній</span>
+                        <h3>固定翼UAV</h3>
+                        <span class="range-badge">中距離/長距離</span>
                     </div>
                     <ul class="uav-features">
-                        <li><i data-lucide="route"></i>Повна телеметрія ArduPilot/PX4</li>
-                        <li><i data-lucide="map"></i>Картографування територій</li>
-                        <li><i data-lucide="search"></i>Глибока розвідка тилів</li>
+                        <li><i data-lucide="route"></i>完全なArduPilot/PX4テレメトリ</li>
+                        <li><i data-lucide="map"></i>地域マッピング</li>
+                        <li><i data-lucide="search"></i>深部後方偵察</li>
                     </ul>
                 </div>
             </div>
@@ -232,17 +232,17 @@
             <div class="section-header">
                 <div class="section-badge">
                     <i data-lucide="brain"></i>
-                    <span>Машинне навчання</span>
+                    <span>機械学習</span>
                 </div>
-                <h2 class="section-title">ML/AI Pipeline для автономних систем</h2>
-                <p class="section-description">Повний цикл обробки даних та навчання моделей для чотирьох автономних модулів БПЛА</p>
+                <h2 class="section-title">自律システムのML/AIパイプライン</h2>
+                <p class="section-description">4つの自律UAVモジュールのための完全なデータ処理とモデル訓練サイクル</p>
             </div>
 
             <!-- Pipeline Overview -->
             <div class="pipeline-overview">
                 <div class="pipeline-intro">
-                    <h3><i data-lucide="workflow"></i>Архітектура інтелектуальної системи</h3>
-                    <p>Інтегрована платформа машинного навчання для забезпечення повної автономності боевих БПЛА через чотири взаємопов'язані модулі: навігація, наведення, виявлення та класифікація цілей.</p>
+                    <h3><i data-lucide="workflow"></i>インテリジェントシステムアーキテクチャ</h3>
+                    <p>4つの相互接続されたモジュールを通じて戦闘UAVの完全な自律性を確保する統合機械学習プラットフォーム：ナビゲーション、ターゲティング、目標検出、目標分類。</p>
                 </div>
 
                 <!-- Data Flow Diagram -->
@@ -251,10 +251,10 @@
                         <div class="stage-icon">
                             <i data-lucide="database"></i>
                         </div>
-                        <h4>Збір даних</h4>
+                        <h4>データ収集</h4>
                         <div class="stage-metrics">
                             <span class="metric">500+ TB</span>
-                            <span class="metric-label">Сирих даних</span>
+                            <span class="metric-label">生データ</span>
                         </div>
                     </div>
                     <div class="flow-arrow"><i data-lucide="arrow-right"></i></div>
@@ -262,10 +262,10 @@
                         <div class="stage-icon">
                             <i data-lucide="filter"></i>
                         </div>
-                        <h4>Обробка</h4>
+                        <h4>処理</h4>
                         <div class="stage-metrics">
                             <span class="metric">150+ TB</span>
-                            <span class="metric-label">Очищених даних</span>
+                            <span class="metric-label">クリーンデータ</span>
                         </div>
                     </div>
                     <div class="flow-arrow"><i data-lucide="arrow-right"></i></div>
@@ -273,10 +273,10 @@
                         <div class="stage-icon">
                             <i data-lucide="tag"></i>
                         </div>
-                        <h4>Аннотація</h4>
+                        <h4>ラベリング</h4>
                         <div class="stage-metrics">
                             <span class="metric">80+ TB</span>
-                            <span class="metric-label">Розмічених даних</span>
+                            <span class="metric-label">ラベル付きデータ</span>
                         </div>
                     </div>
                     <div class="flow-arrow"><i data-lucide="arrow-right"></i></div>
@@ -284,10 +284,10 @@
                         <div class="stage-icon">
                             <i data-lucide="cpu"></i>
                         </div>
-                        <h4>Навчання</h4>
+                        <h4>トレーニング</h4>
                         <div class="stage-metrics">
                             <span class="metric">300K+</span>
-                            <span class="metric-label">Епізодів</span>
+                            <span class="metric-label">エピソード</span>
                         </div>
                     </div>
                     <div class="flow-arrow"><i data-lucide="arrow-right"></i></div>
@@ -295,10 +295,10 @@
                         <div class="stage-icon">
                             <i data-lucide="rocket"></i>
                         </div>
-                        <h4>Розгортання</h4>
+                        <h4>デプロイメント</h4>
                         <div class="stage-metrics">
                             <span class="metric">&lt;10ms</span>
-                            <span class="metric-label">Латентність</span>
+                            <span class="metric-label">レイテンシー</span>
                         </div>
                     </div>
                 </div>
@@ -314,43 +314,43 @@
                             <i data-lucide="navigation"></i>
                         </div>
                         <div class="module-title-block">
-                            <h3>Автопілотування</h3>
+                            <h3>自動操縦</h3>
                             <p class="module-subtitle">Autonomous Flight Control</p>
                         </div>
                     </div>
                     <div class="module-content">
-                        <p class="module-description">Система автономного управління польотом без участі оператора з можливістю адаптації до змін погоди та уникнення РЕБ</p>
+                        <p class="module-description">オペレーターの介入なしで天候変化への適応とEW回避機能を備えた自律飛行制御システム</p>
                         
                         <div class="module-stats">
                             <div class="module-stat">
                                 <i data-lucide="clock"></i>
                                 <span class="stat-value">15,000+</span>
-                                <span class="stat-label">годин польотів</span>
+                                <span class="stat-label">飛行時間</span>
                             </div>
                             <div class="module-stat">
                                 <i data-lucide="activity"></i>
                                 <span class="stat-value">100 Hz</span>
-                                <span class="stat-label">частота даних</span>
+                                <span class="stat-label">データ周波数</span>
                             </div>
                             <div class="module-stat">
                                 <i data-lucide="target"></i>
                                 <span class="stat-value">&lt;5m</span>
-                                <span class="stat-label">точність</span>
+                                <span class="stat-label">精度</span>
                             </div>
                         </div>
 
                         <div class="data-sources">
-                            <h4><i data-lucide="folder"></i>Джерела даних</h4>
+                            <h4><i data-lucide="folder"></i>データソース</h4>
                             <ul>
-                                <li><i data-lucide="satellite"></i>GPS/IMU телеметрія (9-вісна, 100 Hz)</li>
-                                <li><i data-lucide="wind"></i>Дані про погоду та вітер</li>
-                                <li><i data-lucide="gamepad-2"></i>Сигнали управління PWM (400 Hz)</li>
-                                <li><i data-lucide="monitor"></i>50,000+ годин симуляції (AirSim/Gazebo)</li>
+                                <li><i data-lucide="satellite"></i>GPS/IMUテレメトリ（9軸、100 Hz）</li>
+                                <li><i data-lucide="wind"></i>気象と風データ</li>
+                                <li><i data-lucide="gamepad-2"></i>PWM制御信号（400 Hz）</li>
+                                <li><i data-lucide="monitor"></i>50,000+シミュレーション時間（AirSim/Gazebo）</li>
                             </ul>
                         </div>
 
                         <div class="ml-tech-stack">
-                            <h4><i data-lucide="layers"></i>Технологічний стек</h4>
+                            <h4><i data-lucide="layers"></i>技術スタック</h4>
                             <div class="tech-badges-grid">
                                 <span class="tech-badge">PPO + LSTM</span>
                                 <span class="tech-badge">Reinforcement Learning</span>
@@ -360,26 +360,26 @@
                         </div>
 
                         <div class="performance-metrics">
-                            <h4><i data-lucide="bar-chart-3"></i>Метрики продуктивності</h4>
+                            <h4><i data-lucide="bar-chart-3"></i>性能指標</h4>
                             <div class="metrics-grid">
                                 <div class="metric-item">
                                     <div class="metric-bar" style="--progress: 95%"></div>
-                                    <span class="metric-name">Завершення місії</span>
+                                    <span class="metric-name">ミッション完了率</span>
                                     <span class="metric-value">95%</span>
                                 </div>
                                 <div class="metric-item">
                                     <div class="metric-bar" style="--progress: 98%"></div>
-                                    <span class="metric-name">Точність waypoint</span>
+                                    <span class="metric-name">ウェイポイント精度</span>
                                     <span class="metric-value">98%</span>
                                 </div>
                                 <div class="metric-item">
                                     <div class="metric-bar" style="--progress: 90%"></div>
-                                    <span class="metric-name">Стабільність польоту</span>
+                                    <span class="metric-name">飛行安定性</span>
                                     <span class="metric-value">90%</span>
                                 </div>
                                 <div class="metric-item">
                                     <div class="metric-bar" style="--progress: 99%"></div>
-                                    <span class="metric-name">Безпека (без зіткнень)</span>
+                                    <span class="metric-name">安全性（衝突なし）</span>
                                     <span class="metric-value">99%</span>
                                 </div>
                             </div>
@@ -394,43 +394,43 @@
                             <i data-lucide="crosshair"></i>
                         </div>
                         <div class="module-title-block">
-                            <h3>Автонаведення</h3>
+                            <h3>自動照準</h3>
                             <p class="module-subtitle">Precision Auto-Targeting</p>
                         </div>
                     </div>
                     <div class="module-content">
-                        <p class="module-description">Система точного наведення боевої навантаження з врахуванням руху цілі, БПЛА, балістики та факторів середовища</p>
+                        <p class="module-description">目標の動き、UAVの動き、弾道、環境要因を考慮した戦闘ペイロードの精密照準システム</p>
                         
                         <div class="module-stats">
                             <div class="module-stat">
                                 <i data-lucide="video"></i>
                                 <span class="stat-value">25,000+</span>
-                                <span class="stat-label">годин відео</span>
+                                <span class="stat-label">ビデオ時間</span>
                             </div>
                             <div class="module-stat">
                                 <i data-lucide="crosshair"></i>
                                 <span class="stat-value">5,000+</span>
-                                <span class="stat-label">успішних уражень</span>
+                                <span class="stat-label">成功した攻撃</span>
                             </div>
                             <div class="module-stat">
                                 <i data-lucide="gauge"></i>
                                 <span class="stat-value">30 FPS</span>
-                                <span class="stat-label">обробка відео</span>
+                                <span class="stat-label">ビデオ処理</span>
                             </div>
                         </div>
 
                         <div class="data-sources">
-                            <h4><i data-lucide="folder"></i>Джерела даних</h4>
+                            <h4><i data-lucide="folder"></i>データソース</h4>
                             <ul>
-                                <li><i data-lucide="camera"></i>Відео з цілі (RGB, thermal, 1080p+)</li>
-                                <li><i data-lucide="navigation-2"></i>Телеметрія підвісу камери (gimbal)</li>
-                                <li><i data-lucide="map-pin"></i>GPS координати цілі та БПЛА</li>
-                                <li><i data-lucide="wind"></i>Балістичні розрахунки та вітер</li>
+                                <li><i data-lucide="camera"></i>ターゲットビデオ（RGB、サーマル、1080p+）</li>
+                                <li><i data-lucide="navigation-2"></i>ジンバルテレメトリ</li>
+                                <li><i data-lucide="map-pin"></i>ターゲットとUAVのGPS座標</li>
+                                <li><i data-lucide="wind"></i>弾道計算と風</li>
                             </ul>
                         </div>
 
                         <div class="ml-tech-stack">
-                            <h4><i data-lucide="layers"></i>Технологічний стек</h4>
+                            <h4><i data-lucide="layers"></i>技術スタック</h4>
                             <div class="tech-badges-grid">
                                 <span class="tech-badge">Kalman Filter</span>
                                 <span class="tech-badge">Optical Flow</span>
@@ -440,26 +440,26 @@
                         </div>
 
                         <div class="performance-metrics">
-                            <h4><i data-lucide="bar-chart-3"></i>Метрики продуктивності</h4>
+                            <h4><i data-lucide="bar-chart-3"></i>性能指標</h4>
                             <div class="metrics-grid">
                                 <div class="metric-item">
                                     <div class="metric-bar" style="--progress: 92%"></div>
-                                    <span class="metric-name">Точність ураження</span>
+                                    <span class="metric-name">攻撃精度</span>
                                     <span class="metric-value">92%</span>
                                 </div>
                                 <div class="metric-item">
                                     <div class="metric-bar" style="--progress: 88%"></div>
-                                    <span class="metric-name">Tracking стабільність</span>
+                                    <span class="metric-name">追跡安定性</span>
                                     <span class="metric-value">88%</span>
                                 </div>
                                 <div class="metric-item">
                                     <div class="metric-bar" style="--progress: 85%"></div>
-                                    <span class="metric-name">Рухомі цілі</span>
+                                    <span class="metric-name">移動目標</span>
                                     <span class="metric-value">85%</span>
                                 </div>
                                 <div class="metric-item">
                                     <div class="metric-bar" style="--progress: 15%"></div>
-                                    <span class="metric-name">Середнє відхилення</span>
+                                    <span class="metric-name">平均偏差</span>
                                     <span class="metric-value">1.5m</span>
                                 </div>
                             </div>
@@ -474,43 +474,43 @@
                             <i data-lucide="scan-search"></i>
                         </div>
                         <div class="module-title-block">
-                            <h3>Автопошук цілей</h3>
+                            <h3>目標検索</h3>
                             <p class="module-subtitle">Target Search & Detection</p>
                         </div>
                     </div>
                     <div class="module-content">
-                        <p class="module-description">Автономна система пошуку та виявлення об'єктів в реальному часі з аналізом тепловізійних та RGB зображень</p>
+                        <p class="module-description">サーマルとRGB画像の分析を備えたリアルタイム物体検索・検出システム</p>
                         
                         <div class="module-stats">
                             <div class="module-stat">
                                 <i data-lucide="image"></i>
                                 <span class="stat-value">2.5M+</span>
-                                <span class="stat-label">розмічених зображень</span>
+                                <span class="stat-label">ラベル付き画像</span>
                             </div>
                             <div class="module-stat">
                                 <i data-lucide="layers-2"></i>
                                 <span class="stat-value">45</span>
-                                <span class="stat-label">класів об'єктів</span>
+                                <span class="stat-label">物体クラス</span>
                             </div>
                             <div class="module-stat">
                                 <i data-lucide="zap"></i>
                                 <span class="stat-value">60 FPS</span>
-                                <span class="stat-label">на Jetson Orin</span>
+                                <span class="stat-label">Jetson Orin上</span>
                             </div>
                         </div>
 
                         <div class="data-sources">
-                            <h4><i data-lucide="folder"></i>Джерела даних</h4>
+                            <h4><i data-lucide="folder"></i>データソース</h4>
                             <ul>
-                                <li><i data-lucide="image"></i>2.5M+ розмічених знімків (RGB + thermal)</li>
-                                <li><i data-lucide="video"></i>8,000+ годин відео з розвідки</li>
-                                <li><i data-lucide="satellite"></i>Супутникові знімки (Sentinel, Landsat)</li>
-                                <li><i data-lucide="bot"></i>Синтетичні дані (GAN, Unreal Engine)</li>
+                                <li><i data-lucide="image"></i>2.5M+ラベル付き画像（RGB +サーマル）</li>
+                                <li><i data-lucide="video"></i>8,000+時間の偵察ビデオ</li>
+                                <li><i data-lucide="satellite"></i>衛星画像（Sentinel、Landsat）</li>
+                                <li><i data-lucide="bot"></i>合成データ（GAN、Unreal Engine）</li>
                             </ul>
                         </div>
 
                         <div class="ml-tech-stack">
-                            <h4><i data-lucide="layers"></i>Технологічний стек</h4>
+                            <h4><i data-lucide="layers"></i>技術スタック</h4>
                             <div class="tech-badges-grid">
                                 <span class="tech-badge">YOLO v9</span>
                                 <span class="tech-badge">SAM (Segment Anything)</span>
@@ -520,7 +520,7 @@
                         </div>
 
                         <div class="performance-metrics">
-                            <h4><i data-lucide="bar-chart-3"></i>Метрики продуктивності</h4>
+                            <h4><i data-lucide="bar-chart-3"></i>性能指標</h4>
                             <div class="metrics-grid">
                                 <div class="metric-item">
                                     <div class="metric-bar" style="--progress: 94%"></div>
@@ -529,17 +529,17 @@
                                 </div>
                                 <div class="metric-item">
                                     <div class="metric-bar" style="--progress: 89%"></div>
-                                    <span class="metric-name">Recall</span>
+                                    <span class="metric-name">リコール</span>
                                     <span class="metric-value">89%</span>
                                 </div>
                                 <div class="metric-item">
                                     <div class="metric-bar" style="--progress: 92%"></div>
-                                    <span class="metric-name">Precision</span>
+                                    <span class="metric-name">プレシジョン</span>
                                     <span class="metric-value">92%</span>
                                 </div>
                                 <div class="metric-item">
                                     <div class="metric-bar" style="--progress: 16%"></div>
-                                    <span class="metric-name">Inference Time</span>
+                                    <span class="metric-name">推論時間</span>
                                     <span class="metric-value">16ms</span>
                                 </div>
                             </div>
@@ -554,43 +554,43 @@
                             <i data-lucide="scan-eye"></i>
                         </div>
                         <div class="module-title-block">
-                            <h3>Автовизначення цілей</h3>
+                            <h3>目標分類</h3>
                             <p class="module-subtitle">Target Classification & Recognition</p>
                         </div>
                     </div>
                     <div class="module-content">
-                        <p class="module-description">Детальна класифікація виявлених об'єктів з визначенням типу техніки, озброєння та пріоритету цілі</p>
+                        <p class="module-description">機器タイプ、兵器、ターゲット優先度の識別を伴う検出された物体の詳細な分類</p>
                         
                         <div class="module-stats">
                             <div class="module-stat">
                                 <i data-lucide="database"></i>
                                 <span class="stat-value">1.2M+</span>
-                                <span class="stat-label">зразків техніки</span>
+                                <span class="stat-label">機器サンプル</span>
                             </div>
                             <div class="module-stat">
                                 <i data-lucide="layers"></i>
                                 <span class="stat-value">150+</span>
-                                <span class="stat-label">типів об'єктів</span>
+                                <span class="stat-label">物体タイプ</span>
                             </div>
                             <div class="module-stat">
                                 <i data-lucide="shield-check"></i>
                                 <span class="stat-value">97.5%</span>
-                                <span class="stat-label">точність</span>
+                                <span class="stat-label">精度</span>
                             </div>
                         </div>
 
                         <div class="data-sources">
-                            <h4><i data-lucide="folder"></i>Джерела даних</h4>
+                            <h4><i data-lucide="folder"></i>データソース</h4>
                             <ul>
-                                <li><i data-lucide="image"></i>1.2M+ зображень техніки (різні ракурси)</li>
-                                <li><i data-lucide="book-open"></i>Відкриті датасети (xView, DOTA, VEDAI)</li>
-                                <li><i data-lucide="video"></i>Відео з театру війни (4,500+ годин)</li>
-                                <li><i data-lucide="shield"></i>Класифіковані дані від партнерів</li>
+                                <li><i data-lucide="image"></i>1.2M+機器画像（さまざまな角度）</li>
+                                <li><i data-lucide="book-open"></i>オープンデータセット（xView、DOTA、VEDAI）</li>
+                                <li><i data-lucide="video"></i>戦場映像（4,500+時間）</li>
+                                <li><i data-lucide="shield"></i>パートナーからの機密データ</li>
                             </ul>
                         </div>
 
                         <div class="ml-tech-stack">
-                            <h4><i data-lucide="layers"></i>Технологічний стек</h4>
+                            <h4><i data-lucide="layers"></i>技術スタック</h4>
                             <div class="tech-badges-grid">
                                 <span class="tech-badge">EfficientNet-V2</span>
                                 <span class="tech-badge">Vision Transformer</span>
@@ -600,26 +600,26 @@
                         </div>
 
                         <div class="performance-metrics">
-                            <h4><i data-lucide="bar-chart-3"></i>Метрики продуктивності</h4>
+                            <h4><i data-lucide="bar-chart-3"></i>性能指標</h4>
                             <div class="metrics-grid">
                                 <div class="metric-item">
                                     <div class="metric-bar" style="--progress: 97%"></div>
-                                    <span class="metric-name">Top-1 Accuracy</span>
+                                    <span class="metric-name">Top-1精度</span>
                                     <span class="metric-value">97.5%</span>
                                 </div>
                                 <div class="metric-item">
                                     <div class="metric-bar" style="--progress: 99%"></div>
-                                    <span class="metric-name">Top-5 Accuracy</span>
+                                    <span class="metric-name">Top-5精度</span>
                                     <span class="metric-value">99.2%</span>
                                 </div>
                                 <div class="metric-item">
                                     <div class="metric-bar" style="--progress: 95%"></div>
-                                    <span class="metric-name">Confusion Matrix</span>
+                                    <span class="metric-name">混同行列</span>
                                     <span class="metric-value">95%</span>
                                 </div>
                                 <div class="metric-item">
                                     <div class="metric-bar" style="--progress: 12%"></div>
-                                    <span class="metric-name">Inference Time</span>
+                                    <span class="metric-name">推論時間</span>
                                     <span class="metric-value">12ms</span>
                                 </div>
                             </div>
@@ -631,46 +631,46 @@
 
             <!-- Training Infrastructure -->
             <div class="training-infrastructure">
-                <h3><i data-lucide="server"></i>Інфраструктура навчання</h3>
+                <h3><i data-lucide="server"></i>トレーニングインフラ</h3>
                 <div class="infra-grid">
                     <div class="infra-card">
                         <i data-lucide="cpu"></i>
-                        <h4>GPU кластер</h4>
+                        <h4>GPUクラスタ</h4>
                         <ul>
                             <li>32x NVIDIA A100 (80GB)</li>
                             <li>16x NVIDIA H100</li>
-                            <li>Distributed training (Horovod)</li>
-                            <li>Mixed precision (FP16/BF16)</li>
+                            <li>分散トレーニング（Horovod）</li>
+                            <li>混合精度（FP16/BF16）</li>
                         </ul>
                     </div>
                     <div class="infra-card">
                         <i data-lucide="hard-drive"></i>
-                        <h4>Зберігання даних</h4>
+                        <h4>データストレージ</h4>
                         <ul>
-                            <li>500+ TB raw data (S3/MinIO)</li>
-                            <li>150+ TB processed (NVMe)</li>
-                            <li>DVC версіонування</li>
-                            <li>Geo-replicated backup</li>
+                            <li>500+ TB生データ（S3/MinIO）</li>
+                            <li>150+ TB処理済み（NVMe）</li>
+                            <li>DVCバージョニング</li>
+                            <li>地理的レプリケーションバックアップ</li>
                         </ul>
                     </div>
                     <div class="infra-card">
                         <i data-lucide="workflow"></i>
-                        <h4>MLOps Pipeline</h4>
+                        <h4>MLOpsパイプライン</h4>
                         <ul>
-                            <li>MLflow tracking</li>
-                            <li>Kubeflow orchestration</li>
-                            <li>CI/CD automation</li>
-                            <li>A/B testing framework</li>
+                            <li>MLflow追跡</li>
+                            <li>Kubeflowオーケストレーション</li>
+                            <li>CI/CD自動化</li>
+                            <li>A/Bテストフレームワーク</li>
                         </ul>
                     </div>
                     <div class="infra-card">
                         <i data-lucide="shield"></i>
-                        <h4>Edge Deployment</h4>
+                        <h4>エッジデプロイメント</h4>
                         <ul>
                             <li>NVIDIA Jetson AGX Orin</li>
-                            <li>TensorRT optimization</li>
-                            <li>INT8 quantization</li>
-                            <li>&lt;10ms latency guarantee</li>
+                            <li>TensorRT最適化</li>
+                            <li>INT8量子化</li>
+                            <li>&lt;10ms レイテンシー保証</li>
                         </ul>
                     </div>
                 </div>
@@ -678,10 +678,10 @@
 
             <!-- Key Technologies -->
             <div class="key-technologies">
-                <h3><i data-lucide="sparkles"></i>Ключові технології</h3>
+                <h3><i data-lucide="sparkles"></i>主要技術</h3>
                 <div class="tech-categories">
                     <div class="tech-category">
-                        <h4><i data-lucide="brain"></i>Deep Learning</h4>
+                        <h4><i data-lucide="brain"></i>ディープラーニング</h4>
                         <div class="tech-items">
                             <span class="tech-item">PyTorch 2.0+</span>
                             <span class="tech-item">TensorFlow 2.x</span>
@@ -690,7 +690,7 @@
                         </div>
                     </div>
                     <div class="tech-category">
-                        <h4><i data-lucide="eye"></i>Computer Vision</h4>
+                        <h4><i data-lucide="eye"></i>コンピュータビジョン</h4>
                         <div class="tech-items">
                             <span class="tech-item">YOLO v8/v9</span>
                             <span class="tech-item">SAM</span>
@@ -699,7 +699,7 @@
                         </div>
                     </div>
                     <div class="tech-category">
-                        <h4><i data-lucide="gamepad-2"></i>Reinforcement Learning</h4>
+                        <h4><i data-lucide="gamepad-2"></i>強化学習</h4>
                         <div class="tech-items">
                             <span class="tech-item">Stable-Baselines3</span>
                             <span class="tech-item">Ray RLlib</span>
@@ -708,7 +708,7 @@
                         </div>
                     </div>
                     <div class="tech-category">
-                        <h4><i data-lucide="database"></i>Data Processing</h4>
+                        <h4><i data-lucide="database"></i>データ処理</h4>
                         <div class="tech-items">
                             <span class="tech-item">Apache Spark</span>
                             <span class="tech-item">Kafka/Flink</span>
@@ -721,27 +721,27 @@
 
             <!-- Security & Compliance -->
             <div class="security-compliance">
-                <h3><i data-lucide="shield-check"></i>Безпека та відповідність стандартам</h3>
+                <h3><i data-lucide="shield-check"></i>セキュリティとコンプライアンス</h3>
                 <div class="compliance-grid">
                     <div class="compliance-card">
                         <i data-lucide="lock"></i>
                         <h4>NATO SECRET</h4>
-                        <p>Шифрування даних, захищені протоколи передачі, контроль доступу</p>
+                        <p>データ暗号化、安全な伝送プロトコル、アクセス制御</p>
                     </div>
                     <div class="compliance-card">
                         <i data-lucide="plug"></i>
                         <h4>STANAG 4586</h4>
-                        <p>Сумісність з системами НАТО, уніфіковані інтерфейси, взаємозамінність</p>
+                        <p>NATOシステム互換性、統一インターフェース、相互運用性</p>
                     </div>
                     <div class="compliance-card">
                         <i data-lucide="file-check"></i>
                         <h4>ISO 27001</h4>
-                        <p>Управління інформаційною безпекою, аудит систем, управління ризиками</p>
+                        <p>情報セキュリティ管理、システム監査、リスク管理</p>
                     </div>
                     <div class="compliance-card">
                         <i data-lucide="shield-alert"></i>
-                        <h4>Adversarial Defense</h4>
-                        <p>Захист від атак на моделі, робастність до шуму, верифікація рішень</p>
+                        <h4>敵対的防御</h4>
+                        <p>モデル攻撃保護、ノイズロバストネス、決定検証</p>
                     </div>
                 </div>
             </div>
@@ -755,33 +755,33 @@
             <div class="section-header">
                 <div class="section-badge">
                     <i data-lucide="globe"></i>
-                    <span>Стандарти</span>
+                    <span>標準</span>
                 </div>
-                <h2 class="section-title">База знань стандартів НАТО для БПЛА</h2>
-                <p class="section-description">Комплексний огляд існуючих та майбутніх стандартів інтеграції безпілотних систем</p>
+                <h2 class="section-title">NATO無人航空機標準知識ベース</h2>
+                <p class="section-description">既存および将来の無人システム統合標準の包括的な概要</p>
             </div>
 
             <!-- Wiki Navigation -->
             <div class="wiki-nav">
-                <a href="#nato-intro" class="wiki-nav-link"><i data-lucide="book-open"></i>Вступ</a>
-                <a href="#nato-existing" class="wiki-nav-link"><i data-lucide="check-circle"></i>Діючі стандарти</a>
-                <a href="#nato-development" class="wiki-nav-link"><i data-lucide="code"></i>В розробці</a>
-                <a href="#nato-roadmap" class="wiki-nav-link"><i data-lucide="map"></i>Дорожня карта</a>
+                <a href="#nato-intro" class="wiki-nav-link"><i data-lucide="book-open"></i>はじめに</a>
+                <a href="#nato-existing" class="wiki-nav-link"><i data-lucide="check-circle"></i>現行標準</a>
+                <a href="#nato-development" class="wiki-nav-link"><i data-lucide="code"></i>開発中</a>
+                <a href="#nato-roadmap" class="wiki-nav-link"><i data-lucide="map"></i>ロードマップ</a>
             </div>
 
             <!-- Introduction -->
             <div id="nato-intro" class="wiki-section">
                 <div class="wiki-header">
                     <i data-lucide="info"></i>
-                    <h3>Вступ до стандартів STANAG</h3>
+                    <h3>STANAG標準の紹介</h3>
                 </div>
                 <div class="wiki-content">
-                    <p>STANAG (Standardization Agreement) — це документи, що встановлюють єдині стандарти для країн-членів НАТО. У сфері БПЛА вони забезпечують <strong>оперативну сумісність</strong>, безпеку та ефективність використання безпілотних систем у спільних операціях.</p>
+                    <p>STANAG（標準化協定）は、NATO加盟国の統一標準を確立する文書です。UAV分野では、<strong>運用互換性</strong>、セキュリティ、および共同作戦における無人システムの効率的な使用を保証します。</p>
                     <div class="wiki-info-box">
                         <i data-lucide="alert-circle"></i>
                         <div>
-                            <strong>Критична важливість для України:</strong>
-                            <p>Впровадження стандартів НАТО є ключовим фактором інтеграції ЗСУ у структури Альянсу, забезпечуючи повну сумісність з технікою та системами країн-партнерів.</p>
+                            <strong>ウクライナにとっての重要性：</strong>
+                            <p>NATO標準の導入は、ウクライナ軍を同盟構造に統合する重要な要素であり、パートナー国の装備およびシステムとの完全な互換性を確保します。</p>
                         </div>
                     </div>
                 </div>
@@ -791,33 +791,33 @@
             <div id="nato-existing" class="wiki-section">
                 <div class="wiki-header">
                     <i data-lucide="shield-check"></i>
-                    <h3>Діючі стандарти НАТО для БПЛА</h3>
+                    <h3>現行のNATO UAV標準</h3>
                 </div>
                 <div class="wiki-content">
                     
                     <div class="standard-card">
                         <div class="standard-header">
                             <div class="standard-badge">STANAG 4586</div>
-                            <span class="status-badge active">Активний</span>
+                            <span class="status-badge active">現行</span>
                         </div>
-                        <h4><i data-lucide="plug"></i>Стандартний інтерфейс системи управління БПЛА</h4>
-                        <p class="standard-desc">Визначає архітектуру взаємодії між наземними станціями управління та безпілотними платформами різних виробників.</p>
+                        <h4><i data-lucide="plug"></i>UAV制御システムの標準インターフェース</h4>
+                        <p class="standard-desc">異なるメーカーの地上管制局と無人プラットフォーム間の相互作用アーキテクチャを定義します。</p>
                         <div class="standard-details">
                             <div class="detail-row">
-                                <strong>Область застосування:</strong>
-                                <span>Всі типи БПЛА (FPV, розвідувальні, крило)</span>
+                                <strong>適用範囲：</strong>
+                                <span>全タイプのUAV（FPV、偵察、固定翼）</span>
                             </div>
                             <div class="detail-row">
-                                <strong>Версії:</strong>
-                                <span>Edition 1, 2, 3, 4 (поточна)</span>
+                                <strong>バージョン：</strong>
+                                <span>Edition 1, 2, 3, 4 (現行)</span>
                             </div>
                             <div class="detail-row">
-                                <strong>Ключові можливості:</strong>
+                                <strong>主な機能：</strong>
                                 <ul>
-                                    <li>Уніфікований протокол передачі команд</li>
-                                    <li>Стандартизація телеметрії</li>
-                                    <li>Взаємозамінність систем управління</li>
-                                    <li>Інтеграція з C4ISR системами</li>
+                                    <li>統一コマンド伝送プロトコル</li>
+                                    <li>テレメトリの標準化</li>
+                                    <li>制御システムの互換性</li>
+                                    <li>C4ISRシステムとの統合</li>
                                 </ul>
                             </div>
                         </div>
@@ -826,22 +826,22 @@
                     <div class="standard-card">
                         <div class="standard-header">
                             <div class="standard-badge">STANAG 4671</div>
-                            <span class="status-badge active">Активний</span>
+                            <span class="status-badge active">現行</span>
                         </div>
-                        <h4><i data-lucide="plane"></i>Вимоги до льотної придатності БПЛА</h4>
-                        <p class="standard-desc">Встановлює вимоги до безпечної експлуатації БПЛА з нерухомим крилом вагою від 150 кг до 20 тонн.</p>
+                        <h4><i data-lucide="plane"></i>UAV耐空性要件</h4>
+                        <p class="standard-desc">150kgから20トンの固定翼UAVの安全運用要件を確立します。</p>
                         <div class="standard-details">
                             <div class="detail-row">
-                                <strong>Категорії БПЛА:</strong>
-                                <span>Середні та важкі БПЛА класу "крило"</span>
+                                <strong>UAVカテゴリー：</strong>
+                                <span>中型および大型固定翼UAV</span>
                             </div>
                             <div class="detail-row">
-                                <strong>Охоплює:</strong>
+                                <strong>対象範囲：</strong>
                                 <ul>
-                                    <li>Структурна міцність та аеродинаміка</li>
-                                    <li>Системи силової установки</li>
-                                    <li>Електронні системи управління</li>
-                                    <li>Процедури сертифікації</li>
+                                    <li>構造強度と空力性能</li>
+                                    <li>推進システム</li>
+                                    <li>電子制御システム</li>
+                                    <li>認証手続き</li>
                                 </ul>
                             </div>
                         </div>
@@ -850,22 +850,22 @@
                     <div class="standard-card">
                         <div class="standard-header">
                             <div class="standard-badge">STANAG 4703</div>
-                            <span class="status-badge active">Активний</span>
+                            <span class="status-badge active">現行</span>
                         </div>
-                        <h4><i data-lucide="radio"></i>Системи зв'язку та управління БПЛА</h4>
-                        <p class="standard-desc">Визначає вимоги до надійної передачі даних між БПЛА та наземними станціями в умовах радіоелектронної боротьби.</p>
+                        <h4><i data-lucide="radio"></i>UAV通信・制御システム</h4>
+                        <p class="standard-desc">電子戦環境下でのUAVと地上局間の確実なデータ伝送要件を定義します。</p>
                         <div class="standard-details">
                             <div class="detail-row">
-                                <strong>Частотні діапазони:</strong>
-                                <span>VHF, UHF, L-band, Ku-band, Ka-band</span>
+                                <strong>周波数帯：</strong>
+                                <span>VHF, UHF, Lバンド, Kuバンド, Kaバンド</span>
                             </div>
                             <div class="detail-row">
-                                <strong>Захист:</strong>
+                                <strong>保護機能：</strong>
                                 <ul>
-                                    <li>Шифрування за стандартами НАТО</li>
-                                    <li>Захист від перехоплення</li>
-                                    <li>Стійкість до глушіння</li>
-                                    <li>Автентифікація та контроль доступу</li>
+                                    <li>NATO標準暗号化</li>
+                                    <li>傍受保護</li>
+                                    <li>妨害耐性</li>
+                                    <li>認証とアクセス制御</li>
                                 </ul>
                             </div>
                         </div>
@@ -874,13 +874,13 @@
                     <div class="standard-card">
                         <div class="standard-header">
                             <div class="standard-badge">OGC</div>
-                            <span class="status-badge active">Активний</span>
+                            <span class="status-badge active">現行</span>
                         </div>
-                        <h4><i data-lucide="map-pin"></i>Геопросторові стандарти</h4>
-                        <p class="standard-desc">Формати обміну геопросторовими даними (KML, GML, WMS) для інтеграції з системами управління НАТО.</p>
+                        <h4><i data-lucide="map-pin"></i>地理空間標準</h4>
+                        <p class="standard-desc">NATO指揮システムとの統合のための地理空間データ交換フォーマット（KML、GML、WMS）。</p>
                         <div class="standard-details">
                             <div class="detail-row">
-                                <strong>Формати:</strong>
+                                <strong>フォーマット：</strong>
                                 <span>KML, GeoJSON, WMS, WFS, WMTS</span>
                             </div>
                         </div>
@@ -889,13 +889,13 @@
                     <div class="standard-card">
                         <div class="standard-header">
                             <div class="standard-badge">NATO SECRET</div>
-                            <span class="status-badge active">Активний</span>
+                            <span class="status-badge active">現行</span>
                         </div>
-                        <h4><i data-lucide="lock-keyhole"></i>Інформаційна безпека</h4>
-                        <p class="standard-desc">Комплекс стандартів захисту інформації для обробки та передачі секретних даних.</p>
+                        <h4><i data-lucide="lock-keyhole"></i>情報セキュリティ</h4>
+                        <p class="standard-desc">機密データの処理と伝送のための情報保護標準の複合体。</p>
                         <div class="standard-details">
                             <div class="detail-row">
-                                <strong>Рівні класифікації:</strong>
+                                <strong>機密分類レベル：</strong>
                                 <span>UNCLASSIFIED, RESTRICTED, CONFIDENTIAL, SECRET, COSMIC TOP SECRET</span>
                             </div>
                         </div>
@@ -908,30 +908,30 @@
             <div id="nato-development" class="wiki-section">
                 <div class="wiki-header">
                     <i data-lucide="code"></i>
-                    <h3>Стандарти в розробці</h3>
+                    <h3>開発中の標準</h3>
                 </div>
                 <div class="wiki-content">
                     
                     <div class="standard-card">
                         <div class="standard-header">
                             <div class="standard-badge">STANAG 4746</div>
-                            <span class="status-badge development">В розробці</span>
+                            <span class="status-badge development">開発中</span>
                         </div>
-                        <h4><i data-lucide="shield"></i>Кібербезпека безпілотних систем</h4>
-                        <p class="standard-desc">Комплексний стандарт захисту БПЛА від кібератак, спуфінгу GPS та перехоплення управління.</p>
+                        <h4><i data-lucide="shield"></i>無人システムのサイバーセキュリティ</h4>
+                        <p class="standard-desc">サイバー攻撃、GPSスプーフィング、制御乗っ取りからUAVを保護する包括的な標準。</p>
                         <div class="standard-details">
                             <div class="detail-row">
-                                <strong>Очікувана дата впровадження:</strong>
+                                <strong>実装予定日：</strong>
                                 <span class="date-badge">2028-2030</span>
                             </div>
                             <div class="detail-row">
-                                <strong>Ключові напрямки:</strong>
+                                <strong>主要方向：</strong>
                                 <ul>
-                                    <li>Захист від спуфінгу супутникової навігації</li>
-                                    <li>Шифрування каналів управління</li>
-                                    <li>Виявлення несанкціонованого доступу</li>
-                                    <li>Безпечні оновлення програмного забезпечення</li>
-                                    <li>Захист від атак на supply chain</li>
+                                    <li>衛星航法スプーフィング保護</li>
+                                    <li>制御チャネル暗号化</li>
+                                    <li>不正アクセス検出</li>
+                                    <li>安全なソフトウェア更新</li>
+                                    <li>サプライチェーン攻撃保護</li>
                                 </ul>
                             </div>
                         </div>
@@ -940,22 +940,22 @@
                     <div class="standard-card">
                         <div class="standard-header">
                             <div class="standard-badge">STANAG 4785</div>
-                            <span class="status-badge development">В розробці</span>
+                            <span class="status-badge development">開発中</span>
                         </div>
-                        <h4><i data-lucide="plane-landing"></i>Інтеграція БПЛА в загальний повітряний простір</h4>
-                        <p class="standard-desc">Стандарт безпечного співіснування пілотованих та безпілотних літальних апаратів у єдиному повітряному просторі.</p>
+                        <h4><i data-lucide="plane-landing"></i>一般空域へのUAV統合</h4>
+                        <p class="standard-desc">統一空域における有人航空機と無人航空機の安全な共存標準。</p>
                         <div class="standard-details">
                             <div class="detail-row">
-                                <strong>Очікувана дата впровадження:</strong>
+                                <strong>実装予定日：</strong>
                                 <span class="date-badge">2030-2032</span>
                             </div>
                             <div class="detail-row">
-                                <strong>Основні вимоги:</strong>
+                                <strong>主要要件：</strong>
                                 <ul>
-                                    <li>Системи уникнення зіткнень (DAA - Detect and Avoid)</li>
-                                    <li>Інтеграція з ATC (Air Traffic Control)</li>
-                                    <li>Транспондери та ідентифікація</li>
-                                    <li>Процедури польотів у контрольованому просторі</li>
+                                    <li>衝突回避システム（DAA - Detect and Avoid）</li>
+                                    <li>航空交通管制（ATC）統合</li>
+                                    <li>トランスポンダと識別</li>
+                                    <li>管制空域飛行手順</li>
                                 </ul>
                             </div>
                         </div>
@@ -964,23 +964,23 @@
                     <div class="standard-card">
                         <div class="standard-header">
                             <div class="standard-badge">STANAG 48XX</div>
-                            <span class="status-badge planning">Планується</span>
+                            <span class="status-badge planning">計画中</span>
                         </div>
-                        <h4><i data-lucide="cpu"></i>Автономні БПЛА з штучним інтелектом</h4>
-                        <p class="standard-desc">Стандарти для БПЛА з високим рівнем автономності та системами прийняття рішень на базі ШІ.</p>
+                        <h4><i data-lucide="cpu"></i>人工知能搭載自律UAV</h4>
+                        <p class="standard-desc">高度な自律性とAIベースの意思決定システムを持つUAVの標準。</p>
                         <div class="standard-details">
                             <div class="detail-row">
-                                <strong>Цільова дата:</strong>
+                                <strong>目標日：</strong>
                                 <span class="date-badge">2035-2040</span>
                             </div>
                             <div class="detail-row">
-                                <strong>Область регулювання:</strong>
+                                <strong>規制範囲：</strong>
                                 <ul>
-                                    <li>Етичні принципи використання ШІ</li>
-                                    <li>Рівні автономності (LOA 1-5)</li>
+                                    <li>AI使用の倫理原則</li>
+                                    <li>自律レベル（LOA 1-5）</li>
                                     <li>Human-in-the-loop / Human-on-the-loop</li>
-                                    <li>Прозорість та пояснюваність рішень ШІ</li>
-                                    <li>Процедури валідації та тестування</li>
+                                    <li>AI決定の透明性と説明可能性</li>
+                                    <li>検証とテスト手順</li>
                                 </ul>
                             </div>
                         </div>
@@ -989,22 +989,22 @@
                     <div class="standard-card">
                         <div class="standard-header">
                             <div class="standard-badge">STANAG 49XX</div>
-                            <span class="status-badge planning">Планується</span>
+                            <span class="status-badge planning">計画中</span>
                         </div>
-                        <h4><i data-lucide="network"></i>Рої БПЛА (Swarm Operations)</h4>
-                        <p class="standard-desc">Стандарти координації та управління групами БПЛА для виконання спільних завдань.</p>
+                        <h4><i data-lucide="network"></i>UAVスワーム運用</h4>
+                        <p class="standard-desc">共同ミッション実行のためのUAVグループの調整と制御標準。</p>
                         <div class="standard-details">
                             <div class="detail-row">
-                                <strong>Цільова дата:</strong>
+                                <strong>目標日：</strong>
                                 <span class="date-badge">2038-2042</span>
                             </div>
                             <div class="detail-row">
-                                <strong>Ключові аспекти:</strong>
+                                <strong>主要側面：</strong>
                                 <ul>
-                                    <li>Розподілене управління роєм</li>
-                                    <li>Автономна координація між БПЛА</li>
-                                    <li>Динамічне перерозподілення завдань</li>
-                                    <li>Масштабованість до 1000+ апаратів</li>
+                                    <li>分散スワーム制御</li>
+                                    <li>UAV間の自律調整</li>
+                                    <li>動的タスク再配分</li>
+                                    <li>1000+機までの拡張性</li>
                                 </ul>
                             </div>
                         </div>
@@ -1013,22 +1013,22 @@
                     <div class="standard-card">
                         <div class="standard-header">
                             <div class="standard-badge">STANAG 50XX</div>
-                            <span class="status-badge planning">Планується</span>
+                            <span class="status-badge planning">計画中</span>
                         </div>
-                        <h4><i data-lucide="zap"></i>Енергетична ефективність та альтернативні джерела</h4>
-                        <p class="standard-desc">Вимоги до енергоефективності БПЛА та використання відновлюваних джерел енергії.</p>
+                        <h4><i data-lucide="zap"></i>エネルギー効率と代替エネルギー源</h4>
+                        <p class="standard-desc">UAVのエネルギー効率と再生可能エネルギー源の使用要件。</p>
                         <div class="standard-details">
                             <div class="detail-row">
-                                <strong>Цільова дата:</strong>
+                                <strong>目標日：</strong>
                                 <span class="date-badge">2032-2035</span>
                             </div>
                             <div class="detail-row">
-                                <strong>Технології:</strong>
+                                <strong>技術：</strong>
                                 <ul>
-                                    <li>Водневі паливні елементи</li>
-                                    <li>Сонячні батареї високої ефективності</li>
-                                    <li>Гібридні силові установки</li>
-                                    <li>Бездротова передача енергії</li>
+                                    <li>水素燃料電池</li>
+                                    <li>高効率太陽電池</li>
+                                    <li>ハイブリッド推進システム</li>
+                                    <li>無線電力伝送</li>
                                 </ul>
                             </div>
                         </div>
@@ -1041,7 +1041,7 @@
             <div id="nato-roadmap" class="wiki-section">
                 <div class="wiki-header">
                     <i data-lucide="map"></i>
-                    <h3>Дорожня карта стандартизації до 2050 року</h3>
+                    <h3>2050年までの標準化ロードマップ</h3>
                 </div>
                 <div class="wiki-content">
                     
@@ -1049,12 +1049,12 @@
                         <div class="timeline-item">
                             <div class="timeline-year">2025-2030</div>
                             <div class="timeline-content">
-                                <h4>Фаза 1: Кібербезпека та інтеграція</h4>
+                                <h4>フェーズ1：サイバーセキュリティと統合</h4>
                                 <ul>
-                                    <li>Завершення STANAG 4746 (кібербезпека)</li>
-                                    <li>Впровадження STANAG 4785 (інтеграція в повітряний простір)</li>
-                                    <li>Оновлення STANAG 4586 до Edition 5</li>
-                                    <li>Гармонізація з цивільними стандартами ICAO</li>
+                                    <li>STANAG 4746（サイバーセキュリティ）の完成</li>
+                                    <li>STANAG 4785（空域統合）の実装</li>
+                                    <li>STANAG 4586のEdition 5への更新</li>
+                                    <li>ICAO民間標準との調和</li>
                                 </ul>
                             </div>
                         </div>
@@ -1062,12 +1062,12 @@
                         <div class="timeline-item">
                             <div class="timeline-year">2030-2040</div>
                             <div class="timeline-content">
-                                <h4>Фаза 2: Автономність та штучний інтелект</h4>
+                                <h4>フェーズ2：自律性と人工知能</h4>
                                 <ul>
-                                    <li>Стандарти для автономних БПЛА (LOA 3-5)</li>
-                                    <li>Регулювання використання ШІ в бойових системах</li>
-                                    <li>Початок впровадження стандартів для роїв</li>
-                                    <li>Альтернативні джерела енергії</li>
+                                    <li>自律UAV標準（LOA 3-5）</li>
+                                    <li>戦闘システムにおけるAI使用の規制</li>
+                                    <li>スワーム標準実装の開始</li>
+                                    <li>代替エネルギー源</li>
                                 </ul>
                             </div>
                         </div>
@@ -1075,13 +1075,13 @@
                         <div class="timeline-item">
                             <div class="timeline-year">2040-2050</div>
                             <div class="timeline-content">
-                                <h4>Фаза 3: Повна інтеграція та нові концепції</h4>
+                                <h4>フェーズ3：完全統合と新概念</h4>
                                 <ul>
-                                    <li>Спільні операції пілотованих та безпілотних систем</li>
-                                    <li>Масове застосування роїв БПЛА</li>
-                                    <li>Квантові системи зв'язку та шифрування</li>
-                                    <li>Гіперзвукові та космічні безпілотні платформи</li>
-                                    <li>Біоінспіровані та адаптивні системи</li>
+                                    <li>有人・無人システムの共同運用</li>
+                                    <li>UAVスワームの大規模展開</li>
+                                    <li>量子通信と暗号化システム</li>
+                                    <li>極超音速および宇宙無人プラットフォーム</li>
+                                    <li>生体模倣型および適応型システム</li>
                                 </ul>
                             </div>
                         </div>
@@ -1090,8 +1090,8 @@
                     <div class="wiki-info-box highlight">
                         <i data-lucide="target"></i>
                         <div>
-                            <strong>Стратегічна мета НАТО:</strong>
-                            <p>До 2050 року створити повністю інтегровану екосистему пілотованих та безпілотних систем, здатних до автономної координації на всіх рівнях операцій - від тактичного до стратегічного.</p>
+                            <strong>NATOの戦略目標：</strong>
+                            <p>2050年までに、戦術から戦略までのすべての作戦レベルで自律調整が可能な、有人・無人システムの完全統合エコシステムを構築します。</p>
                         </div>
                     </div>
 
@@ -1102,29 +1102,29 @@
             <div class="wiki-section">
                 <div class="wiki-header">
                     <i data-lucide="book-open"></i>
-                    <h3>Додаткові ресурси</h3>
+                    <h3>追加リソース</h3>
                 </div>
                 <div class="wiki-content">
                     <div class="resources-grid">
                         <div class="resource-card">
                             <i data-lucide="file-text"></i>
-                            <h4>Документація НАТО</h4>
-                            <p>Офіційні документи STANAG</p>
+                            <h4>NATOドキュメント</h4>
+                            <p>公式STANAG文書</p>
                         </div>
                         <div class="resource-card">
                             <i data-lucide="graduation-cap"></i>
-                            <h4>Навчальні матеріали</h4>
-                            <p>Курси та сертифікації</p>
+                            <h4>トレーニング資料</h4>
+                            <p>コースと認定</p>
                         </div>
                         <div class="resource-card">
                             <i data-lucide="users"></i>
-                            <h4>Спільнота</h4>
-                            <p>Форум інженерів та операторів</p>
+                            <h4>コミュニティ</h4>
+                            <p>エンジニアとオペレーターフォーラム</p>
                         </div>
                         <div class="resource-card">
                             <i data-lucide="tool"></i>
-                            <h4>Інструменти</h4>
-                            <p>ПЗ для тестування сумісності</p>
+                            <h4>ツール</h4>
+                            <p>互換性テストソフトウェア</p>
                         </div>
                     </div>
                 </div>
@@ -1139,17 +1139,17 @@
             <div class="section-header">
                 <div class="section-badge">
                     <i data-lucide="brain"></i>
-                    <span>Можливості</span>
+                    <span>機能</span>
                 </div>
-                <h2 class="section-title">Наші технології</h2>
+                <h2 class="section-title">私たちの技術</h2>
             </div>
             <div class="capabilities-grid">
                 <div class="capability-card">
                     <div class="capability-icon">
                         <i data-lucide="database"></i>
                     </div>
-                    <h3>Унифікований прийом даних</h3>
-                    <p>Адаптери та шлюзи для прийому даних з будь-яких типів дронів, перетворення проприетарних потоків у стандартизований формат.</p>
+                    <h3>統一データ受信</h3>
+                    <p>あらゆるタイプのドローンからデータを受信するためのアダプターとゲートウェイ、プロプライエタリストリームを標準化されたフォーマットに変換します。</p>
                     <div class="tech-stack">
                         <span class="tech-badge">STANAG 4586</span>
                         <span class="tech-badge">API Gateway</span>
@@ -1159,8 +1159,8 @@
                     <div class="capability-icon">
                         <i data-lucide="layers-3"></i>
                     </div>
-                    <h3>Єдина операційна картина</h3>
-                    <p>Дані з усіх дронів в реальному часі наносяться на одну цифрову карту. Повна ситуаційна обізнаність командування.</p>
+                    <h3>共通作戦状況図</h3>
+                    <p>すべてのドローンからのデータをリアルタイムで単一のデジタルマップにプロットします。指揮部の完全な状況認識。</p>
                     <div class="tech-stack">
                         <span class="tech-badge">GIS</span>
                         <span class="tech-badge">Real-time</span>
@@ -1170,8 +1170,8 @@
                     <div class="capability-icon">
                         <i data-lucide="scan-eye"></i>
                     </div>
-                    <h3>Комп'ютерний зір</h3>
-                    <p>Автоматичне виявлення та розпізнавання цілей (ATR). Алгоритми в реальному часі аналізують відео, виділяючи техніку та живу силу.</p>
+                    <h3>コンピュータビジョン</h3>
+                    <p>自動目標認識（ATR）。リアルタイムアルゴリズムが映像を分析し、車両と人員を識別します。</p>
                     <div class="tech-stack">
                         <span class="tech-badge">AI/ML</span>
                         <span class="tech-badge">Object Detection</span>
@@ -1181,8 +1181,8 @@
                     <div class="capability-icon">
                         <i data-lucide="tracking"></i>
                     </div>
-                    <h3>Відстеження цілей</h3>
-                    <p>Алгоритми не втрачають ціль, навіть якщо вона тимчасово сховалася. Прогнозування руху та траєкторій.</p>
+                    <h3>目標追跡</h3>
+                    <p>アルゴリズムは目標が一時的に隠れても見失いません。移動と軌道の予測。</p>
                     <div class="tech-stack">
                         <span class="tech-badge">Tracking</span>
                         <span class="tech-badge">Prediction</span>
@@ -1192,8 +1192,8 @@
                     <div class="capability-icon">
                         <i data-lucide="box-select"></i>
                     </div>
-                    <h3>3D-моделювання</h3>
-                    <p>Автоматична склейка тисяч знімків у точні 2D-карти та 3D-моделі місцевості для планування операцій.</p>
+                    <h3>3Dモデリング</h3>
+                    <p>数千の画像を自動的にスティッチングし、作戦計画のための正確な2Dマップと3D地形モデルを作成します。</p>
                     <div class="tech-stack">
                         <span class="tech-badge">Photogrammetry</span>
                         <span class="tech-badge">3D Mapping</span>
@@ -1203,8 +1203,8 @@
                     <div class="capability-icon">
                         <i data-lucide="line-chart"></i>
                     </div>
-                    <h3>Прогнозна аналітика</h3>
-                    <p>Аналіз патернів руху ворожої техніки для передбачення місць розташування та планування засід.</p>
+                    <h3>予測分析</h3>
+                    <p>敵装備の移動パターンを分析し、位置を予測して待ち伏せを計画します。</p>
                     <div class="tech-stack">
                         <span class="tech-badge">Predictive AI</span>
                         <span class="tech-badge">Pattern Analysis</span>
@@ -1214,8 +1214,8 @@
                     <div class="capability-icon">
                         <i data-lucide="settings"></i>
                     </div>
-                    <h3>Прогнозне обслуговування</h3>
-                    <p>Передбачення відмов дронів по вібраціям, споживанню струму та іншим параметрам телеметрії.</p>
+                    <h3>予測メンテナンス</h3>
+                    <p>振動、電流消費、その他のテレメトリパラメータからドローンの故障を予測します。</p>
                     <div class="tech-stack">
                         <span class="tech-badge">Telemetry</span>
                         <span class="tech-badge">Kafka/Flink</span>
@@ -1225,8 +1225,8 @@
                     <div class="capability-icon">
                         <i data-lucide="lock-keyhole"></i>
                     </div>
-                    <h3>Кібербезпека</h3>
-                    <p>Наскрізне шифрування даних, використання VPN, захищені протоколи передачі. Відповідність стандартам NATO SECRET.</p>
+                    <h3>サイバーセキュリティ</h3>
+                    <p>エンドツーエンドのデータ暗号化、VPN使用、安全な送信プロトコル。NATO SECRET準拠。</p>
                     <div class="tech-stack">
                         <span class="tech-badge">Encryption</span>
                         <span class="tech-badge">VPN</span>
@@ -1245,11 +1245,11 @@
                         <i data-lucide="radar"></i>
                         <span>DATAGOD</span>
                     </div>
-                    <p class="footer-description">Невидимий щит української армії. Intelligence & Data Analytics for UAF.</p>
+                    <p class="footer-description">ウクライナ軍の見えない盾。インテリジェンス & データ分析。</p>
                 </div>
                 <div class="footer-right">
                     <div class="footer-section">
-                        <h4>Технології</h4>
+                        <h4>技術</h4>
                         <ul>
                             <li>Machine Learning</li>
                             <li>Computer Vision</li>
@@ -1258,7 +1258,7 @@
                         </ul>
                     </div>
                     <div class="footer-section">
-                        <h4>Стандарти</h4>
+                        <h4>標準</h4>
                         <ul>
                             <li>STANAG 4586</li>
                             <li>OGC Standards</li>
@@ -1267,7 +1267,7 @@
                         </ul>
                     </div>
                     <div class="footer-section">
-                        <h4>Контакт</h4>
+                        <h4>お問い合わせ</h4>
                         <div class="footer-contact">
                             <div class="contact-item">
                                 <i data-lucide="globe"></i>
@@ -1282,22 +1282,22 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2025 DATAGOD. Всі права захищено. Slava Ukraini.</p>
+                <p>&copy; 2025 DATAGOD. 無断転載を禁じます。Slava Ukraini.</p>
             </div>
         </div>
     </footer>
 
-    <script src="src/assets/js/script.js"></script>
+    <script src="../assets/js/script.js"></script>
     <script>
         function switchLanguage(lang) {
             const langMap = {
                 'en': 'index-en.html',
-                'uk': 'index.html',
+                'uk': '../../index.html',
                 'ja': 'index-ja.html'
             };
             window.location.href = langMap[lang];
         }
-        document.getElementById('langSelect').value = 'uk';
+        document.getElementById('langSelect').value = 'ja';
     </script>
 </body>
 </html>

@@ -1,0 +1,31 @@
+# This file specifies files that are *not* uploaded to Google Cloud
+# using gcloud. It follows the same syntax as .gitignore
+
+# Node.js dependencies
+node_modules/
+
+# Test files
+test-*.js
+*test*.js
+test-screenshots/
+test-reports/
+*.log
+TEST-REPORT.md
+*-TEST-*.md
+TESTING-GUIDE.md
+responsive-tester.html
+
+# Git files
+.git
+.gitignore
+
+# Documentation files
+README.md
+*.md
+
+# Package files (not needed for static site)
+package.json
+package-lock.json
+
+# App Engine config (uploaded separately)
+.gcloudignore

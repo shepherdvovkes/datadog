@@ -1,7 +1,7 @@
 {
-  "name": "datadog-website",
+  "name": "datagod-website",
   "version": "1.0.0",
-  "description": "DATADOG - Intelligence Solutions for UAF",
+  "description": "DATAGOD - Intelligence Solutions for UAF",
   "main": "index.html",
   "scripts": {
     "test": "node test-pages.js",
@@ -11,13 +11,13 @@
     "test:full": "npm run start & sleep 2 && npm test"
   },
   "keywords": [
-    "datadog",
+    "datagod",
     "intelligence",
     "uav",
     "ukraine",
     "defense"
   ],
-  "author": "DATADOG Team",
+  "author": "DATAGOD Team",
   "license": "UNLICENSED",
   "private": true,
   "dependencies": {

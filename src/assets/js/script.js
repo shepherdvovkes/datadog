@@ -372,7 +372,7 @@ document.addEventListener('DOMContentLoaded', () => {
         stage.style.animationDelay = `${index * 0.1}s`;
     });
     
-    console.log('DATADOG Intelligence Platform initialized');
+    console.log('DATAGOD Intelligence Platform initialized');
     console.log('NATO Standards Wiki Module loaded');
     console.log('ML Pipeline Module loaded');
     console.log('Slava Ukraini!');

@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 /**
- * DATADOG Language Switching Test with Puppeteer
+ * DATAGOD Language Switching Test with Puppeteer
  * Tests language switching functionality in a real browser
  */
 
@@ -30,7 +30,7 @@ async function sleep(ms) {
 
 async function testLanguageSwitching() {
     log('\n╔════════════════════════════════════════════════════════════╗', 'cyan');
-    log('║     DATADOG Language Switching Test (Puppeteer)          ║', 'bright');
+    log('║     DATAGOD Language Switching Test (Puppeteer)          ║', 'bright');
     log('╚════════════════════════════════════════════════════════════╝', 'cyan');
 
     let browser;

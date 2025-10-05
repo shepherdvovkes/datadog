@@ -1,0 +1,67 @@
+version: '3.8'
+
+services:
+  datagod-ssl:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: datagod-ssl
+    restart: unless-stopped
+    ports:
+      - "80:80"
+      - "443:443"
+    environment:
+      - DOMAIN=datagod.s0me.uk
+      - EMAIL=admin@datagod.s0me.uk
+      - STAGING=false
+      - FORCE_RENEWAL=false
+    volumes:
+      # Persist SSL certificates
+      - ssl_certs:/etc/letsencrypt
+      # Persist nginx logs
+      - nginx_logs:/var/log/nginx
+      # Persist certbot webroot
+      - certbot_webroot:/var/www/certbot
+    networks:
+      - datagod-network
+    healthcheck:
+      test: ["CMD", "curl", "-f", "https://datagod.s0me.uk/"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+
+  # Certificate renewal service
+  cert-renewal:
+    image: nginx:alpine
+    container_name: datagod-cert-renewal
+    restart: unless-stopped
+    command: |
+      sh -c "
+        apk add --no-cache certbot curl &&
+        while true; do
+          echo 'Checking certificate renewal...' &&
+          certbot renew --quiet --webroot -w /var/www/certbot &&
+          echo 'Certificate renewal check completed' &&
+          sleep 86400
+        done
+      "
+    volumes:
+      - ssl_certs:/etc/letsencrypt
+      - certbot_webroot:/var/www/certbot
+    networks:
+      - datagod-network
+    depends_on:
+      - datagod-ssl
+
+volumes:
+  ssl_certs:
+    driver: local
+  nginx_logs:
+    driver: local
+  certbot_webroot:
+    driver: local
+
+networks:
+  datagod-network:
+    driver: bridge

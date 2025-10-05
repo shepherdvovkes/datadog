@@ -1,0 +1,35 @@
+runtime: python39
+
+handlers:
+# Serve all static files with `.html` extension
+- url: /(.+\.html)
+  static_files: \1
+  upload: (.+\.html)
+
+# Serve main index
+- url: /
+  static_files: index.html
+  upload: index.html
+
+# Serve CSS files
+- url: /(.+\.css)
+  static_files: \1
+  upload: (.+\.css)
+  mime_type: text/css
+
+# Serve JS files
+- url: /(.+\.js)
+  static_files: \1
+  upload: (.+\.js)
+  mime_type: application/javascript
+
+# Serve image files
+- url: /(.+\.(png|jpg|jpeg|gif|svg|ico))
+  static_files: \1
+  upload: (.+\.(png|jpg|jpeg|gif|svg|ico))
+
+# Serve all other static files
+- url: /(.+)
+  static_files: \1
+  upload: (.+)
+

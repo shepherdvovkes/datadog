@@ -8,8 +8,8 @@ async function testContactInfo() {
 
     const pages = [
         { url: 'http://localhost:8000/', lang: 'Ukrainian', contactHeader: 'Контакт' },
-        { url: 'http://localhost:8000/index-en.html', lang: 'English', contactHeader: 'Contact' },
-        { url: 'http://localhost:8000/index-ja.html', lang: 'Japanese', contactHeader: 'お問い合わせ' }
+        { url: 'http://localhost:8000/src/pages/index-en.html', lang: 'English', contactHeader: 'Contact' },
+        { url: 'http://localhost:8000/src/pages/index-ja.html', lang: 'Japanese', contactHeader: 'お問い合わせ' }
     ];
 
     let allPassed = true;

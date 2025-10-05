@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 /**
- * DATADOG Website Testing Script
+ * DATAGOD Website Testing Script
  * Tests all language versions for errors, broken links, and functionality
  */
 
@@ -11,8 +11,8 @@ const { JSDOM } = require('jsdom');
 const BASE_URL = 'http://localhost:8000';
 const PAGES = [
     { url: '/', name: 'Ukrainian (index.html)', lang: 'uk' },
-    { url: '/index-en.html', name: 'English', lang: 'en' },
-    { url: '/index-ja.html', name: 'Japanese', lang: 'ja' }
+    { url: '/src/pages/index-en.html', name: 'English', lang: 'en' },
+    { url: '/src/pages/index-ja.html', name: 'Japanese', lang: 'ja' }
 ];
 
 const colors = {
@@ -70,7 +70,7 @@ async function testPage(page) {
         // Check basic structure
         log('[3/6] Checking HTML structure...', 'yellow');
         const title = document.querySelector('title');
-        if (!title || !title.textContent.includes('DATADOG')) {
+        if (!title || !title.textContent.includes('DATAGOD')) {
             errors.push('✗ Missing or invalid <title> tag');
         } else {
             successes.push(`✓ Valid title: "${title.textContent.substring(0, 50)}..."`);
@@ -200,7 +200,7 @@ async function testPage(page) {
 
 async function main() {
     log('\n╔════════════════════════════════════════════════════════════╗', 'cyan');
-    log('║           DATADOG Website Testing Suite                   ║', 'bright');
+    log('║           DATAGOD Website Testing Suite                   ║', 'bright');
     log('╚════════════════════════════════════════════════════════════╝', 'cyan');
 
     const results = [];

@@ -1,0 +1,15 @@
+# robots.txt for datadog.s0me.uk
+
+User-agent: *
+Allow: /
+
+# Disallow test files and logs
+Disallow: /test-*
+Disallow: /*.log
+Disallow: /test-screenshots/
+Disallow: /test-reports/
+Disallow: /node_modules/
+
+# Sitemap
+Sitemap: https://datadog.s0me.uk/sitemap.xml
+

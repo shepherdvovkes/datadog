@@ -1,0 +1,9 @@
+Contact: https://datadog.s0me.uk
+Expires: 2026-10-05T00:00:00.000Z
+Preferred-Languages: uk, en
+Canonical: https://datadog.s0me.uk/.well-known/security.txt
+
+# Security Policy
+# If you discover a security vulnerability, please report it responsibly.
+# We appreciate your efforts to improve the security of our platform.
+
