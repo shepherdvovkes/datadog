@@ -29,7 +29,7 @@ info() {
 }
 
 # Configuration
-PROJECT_ID=${GCP_PROJECT_ID:-"datagod-project"}
+PROJECT_ID=${GCP_PROJECT_ID:-"datadog-s0me-uk"}
 REGION=${GCP_REGION:-"us-central1"}
 ZONE=${GCP_ZONE:-"us-central1-a"}
 DOMAIN="datagod.s0me.uk"
