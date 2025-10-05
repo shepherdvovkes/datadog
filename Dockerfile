@@ -15,7 +15,11 @@ RUN apk add --no-cache \
 RUN mkdir -p /etc/letsencrypt/live \
     && mkdir -p /etc/letsencrypt/archive \
     && mkdir -p /var/www/certbot \
-    && mkdir -p /etc/nginx/conf.d
+    && mkdir -p /etc/nginx/conf.d \
+    && mkdir -p /var/log/letsencrypt \
+    && chown -R nginx:nginx /etc/letsencrypt \
+    && chown -R nginx:nginx /var/www/certbot \
+    && chown -R nginx:nginx /var/log/letsencrypt
 
 # Copy SSL generation script
 COPY ssl-setup.sh /usr/local/bin/ssl-setup.sh
@@ -29,6 +33,12 @@ COPY nginx-ssl.conf /etc/nginx/conf.d/default.conf
 COPY src/ /usr/share/nginx/html/
 COPY index.html /usr/share/nginx/html/
 COPY public/ /usr/share/nginx/html/public/
+
+# Generate self-signed certificate for initial setup
+RUN openssl req -x509 -nodes -days 365 -newkey rsa:2048 \
+    -keyout /etc/ssl/certs/nginx-selfsigned.key \
+    -out /etc/ssl/certs/nginx-selfsigned.crt \
+    -subj "/C=US/ST=State/L=City/O=Organization/CN=localhost"
 
 # Create startup script
 COPY docker-entrypoint.sh /usr/local/bin/docker-entrypoint.sh

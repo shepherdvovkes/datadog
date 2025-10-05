@@ -42,10 +42,8 @@ check_domain() {
         log "Domain $DOMAIN is accessible"
         return 0
     else
-        error "Domain $DOMAIN is not accessible. Please ensure:"
-        error "1. Domain DNS points to this server"
-        error "2. Port 80 is open"
-        error "3. No firewall blocking the connection"
+        warn "Domain $DOMAIN is not accessible from container"
+        warn "This is normal for Cloud Run - using self-signed certificate"
         return 1
     fi
 }
