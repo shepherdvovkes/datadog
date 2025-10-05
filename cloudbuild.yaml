@@ -40,11 +40,7 @@ options:
   diskSizeGb: 100
   logging: CLOUD_LOGGING_ONLY
 
-# Substitution variables
-substitutions:
-  _DOMAIN: 'datagod.s0me.uk'
-  _EMAIL: 'admin@datagod.s0me.uk'
-  _REGION: 'us-central1'
+# No substitution variables needed
 
 # Build timeout
 timeout: '1200s'
