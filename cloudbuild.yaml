@@ -4,15 +4,11 @@ steps:
   - name: 'gcr.io/cloud-builders/docker'
     args: [
       'build',
-      '-t', 'gcr.io/$PROJECT_ID/datagod-ssl:$COMMIT_SHA',
       '-t', 'gcr.io/$PROJECT_ID/datagod-ssl:latest',
       '.'
     ]
 
   # Push the image to Container Registry
-  - name: 'gcr.io/cloud-builders/docker'
-    args: ['push', 'gcr.io/$PROJECT_ID/datagod-ssl:$COMMIT_SHA']
-
   - name: 'gcr.io/cloud-builders/docker'
     args: ['push', 'gcr.io/$PROJECT_ID/datagod-ssl:latest']
 
@@ -21,7 +17,7 @@ steps:
     entrypoint: 'gcloud'
     args: [
       'run', 'deploy', 'datagod-ssl',
-      '--image', 'gcr.io/$PROJECT_ID/datagod-ssl:$COMMIT_SHA',
+      '--image', 'gcr.io/$PROJECT_ID/datagod-ssl:latest',
       '--region', 'us-central1',
       '--platform', 'managed',
       '--allow-unauthenticated',
