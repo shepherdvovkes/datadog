@@ -22,7 +22,6 @@ steps:
       '--platform', 'managed',
       '--allow-unauthenticated',
       '--port', '80',
-      '--port', '443',
       '--set-env-vars', 'DOMAIN=datagod.s0me.uk,EMAIL=admin@datagod.s0me.uk,STAGING=false',
       '--memory', '1Gi',
       '--cpu', '1',
