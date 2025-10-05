@@ -1,0 +1,32 @@
+{
+  "name": "datadog-website",
+  "version": "1.0.0",
+  "description": "DATADOG - Intelligence Solutions for UAF",
+  "main": "index.html",
+  "scripts": {
+    "test": "node test-pages.js",
+    "test:switch": "node test-language-switch.js",
+    "test:all": "npm test && npm run test:switch",
+    "start": "python3 -m http.server 8000",
+    "test:full": "npm run start & sleep 2 && npm test"
+  },
+  "keywords": [
+    "datadog",
+    "intelligence",
+    "uav",
+    "ukraine",
+    "defense"
+  ],
+  "author": "DATADOG Team",
+  "license": "UNLICENSED",
+  "private": true,
+  "dependencies": {
+    "jsdom": "^24.0.0"
+  },
+  "devDependencies": {
+    "puppeteer": "^24.23.0"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}

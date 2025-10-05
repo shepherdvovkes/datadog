@@ -1,0 +1,1297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DATADOG - Intelligence Solutions for UAF</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <div class="logo">
+                    <i data-lucide="radar" class="logo-icon"></i>
+                    <span>DATADOG</span>
+                </div>
+                <div class="nav-links">
+                    <a href="#mission" class="nav-link">Mission</a>
+                    <a href="#values" class="nav-link">Values</a>
+                    <a href="#tech" class="nav-link">Technology</a>
+                    <a href="#ml-pipeline" class="nav-link">ML Pipeline</a>
+                    <a href="#nato" class="nav-link">NATO Standards</a>
+                    <a href="#capabilities" class="nav-link">Capabilities</a>
+                    <div class="lang-switcher">
+                        <i data-lucide="globe"></i>
+                        <select id="langSelect" onchange="switchLanguage(this.value)">
+                            <option value="en">EN</option>
+                            <option value="uk">UA</option>
+                            <option value="ja">JP</option>
+                        </select>
+                    </div>
+                </div>
+                <button class="menu-toggle" id="menuToggle">
+                    <i data-lucide="menu"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <i data-lucide="shield-check"></i>
+                    <span>Intelligence & Data Analytics</span>
+                </div>
+                <h1 class="hero-title">The Invisible Shield<br>of Ukrainian Army</h1>
+                <p class="hero-description">Transforming battlefield data streams into tactical superiority and saved lives. We provide the Armed Forces of Ukraine with intelligent solutions based on data and machine learning.</p>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <i data-lucide="zap"></i>
+                        <div class="stat-content">
+                            <div class="stat-value">Real-time</div>
+                            <div class="stat-label">Data Processing</div>
+                        </div>
+                    </div>
+                    <div class="stat-item">
+                        <i data-lucide="cpu"></i>
+                        <div class="stat-content">
+                            <div class="stat-value">AI-driven</div>
+                            <div class="stat-label">Analytics</div>
+                        </div>
+                    </div>
+                    <div class="stat-item">
+                        <i data-lucide="lock"></i>
+                        <div class="stat-content">
+                            <div class="stat-value">NATO SECRET</div>
+                            <div class="stat-label">Security Level</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission Section -->
+    <section id="mission" class="section mission-section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">
+                    <i data-lucide="target"></i>
+                    <span>Mission & Vision</span>
+                </div>
+                <h2 class="section-title">Our Mission</h2>
+            </div>
+            <div class="mission-grid">
+                <div class="mission-card">
+                    <div class="mission-icon">
+                        <i data-lucide="crosshair"></i>
+                    </div>
+                    <h3>Mission</h3>
+                    <p>Transform frontline data streams into tactical superiority and saved lives. We provide the Armed Forces of Ukraine with intelligent data-driven and machine learning solutions.</p>
+                </div>
+                <div class="mission-card">
+                    <div class="mission-icon">
+                        <i data-lucide="eye"></i>
+                    </div>
+                    <h3>Vision</h3>
+                    <p>To become the key invisible shield of the Ukrainian army, where every drone, every soldier, and every commander is empowered by artificial intelligence predicting enemy actions and minimizing risks.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Values Section -->
+    <section id="values" class="section values-section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">
+                    <i data-lucide="compass"></i>
+                    <span>Our Principles</span>
+                </div>
+                <h2 class="section-title">Core Values</h2>
+            </div>
+            <div class="values-grid">
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i data-lucide="gauge"></i>
+                    </div>
+                    <h3>Speed as Standard</h3>
+                    <p>We operate at the pace dictated by war. Deployment, analysis, and decision delivery occur within compressed tactical timeframes.</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i data-lucide="layers"></i>
+                    </div>
+                    <h3>Situational Awareness</h3>
+                    <p>We create a complete, holistic battlefield picture from fragmented data. A unified operational picture in real-time.</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i data-lucide="microchip"></i>
+                    </div>
+                    <h3>Technological Sovereignty</h3>
+                    <p>We develop and deploy advanced technologies adapted to Ukraine's realities, ensuring independence from foreign closed platforms.</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i data-lucide="shield"></i>
+                    </div>
+                    <h3>Security and Reliability</h3>
+                    <p>Data and algorithms are protected by the highest standards. The fault tolerance of our systems is our priority.</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i data-lucide="flag"></i>
+                    </div>
+                    <h3>Contribution to Victory</h3>
+                    <p>We measure our success not in gigabytes, but in lives saved, successful operations, and weakened enemy potential.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- UAV Types Section -->
+    <section id="tech" class="section uav-section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">
+                    <i data-lucide="radio"></i>
+                    <span>Platforms</span>
+                </div>
+                <h2 class="section-title">UAV Types</h2>
+                <p class="section-description">We work with the full spectrum of unmanned systems used by the UAF</p>
+            </div>
+            <div class="uav-grid">
+                <div class="uav-card">
+                    <div class="uav-header">
+                        <i data-lucide="move-diagonal"></i>
+                        <h3>FPV Drones</h3>
+                        <span class="range-badge">Short Range</span>
+                    </div>
+                    <ul class="uav-features">
+                        <li><i data-lucide="activity"></i>Betaflight/INAV Telemetry</li>
+                        <li><i data-lucide="video"></i>Real-time Video Stream</li>
+                        <li><i data-lucide="crosshair"></i>Personnel and Vehicle Strikes</li>
+                    </ul>
+                </div>
+                <div class="uav-card">
+                    <div class="uav-header">
+                        <i data-lucide="scan"></i>
+                        <h3>Reconnaissance Drones</h3>
+                        <span class="range-badge">Short/Medium Range</span>
+                    </div>
+                    <ul class="uav-features">
+                        <li><i data-lucide="satellite-dish"></i>Proprietary DJI Data</li>
+                        <li><i data-lucide="camera"></i>HD Video with Zoom</li>
+                        <li><i data-lucide="map-pin"></i>Reconnaissance & Targeting</li>
+                    </ul>
+                </div>
+                <div class="uav-card">
+                    <div class="uav-header">
+                        <i data-lucide="hexagon"></i>
+                        <h3>Hexacopters</h3>
+                        <span class="range-badge">Medium Range</span>
+                    </div>
+                    <ul class="uav-features">
+                        <li><i data-lucide="thermometer"></i>Thermal & HD Cameras</li>
+                        <li><i data-lucide="package"></i>Cargo Delivery</li>
+                        <li><i data-lucide="moon"></i>Night Reconnaissance</li>
+                    </ul>
+                </div>
+                <div class="uav-card">
+                    <div class="uav-header">
+                        <i data-lucide="plane"></i>
+                        <h3>Fixed-Wing UAV</h3>
+                        <span class="range-badge">Medium/Long Range</span>
+                    </div>
+                    <ul class="uav-features">
+                        <li><i data-lucide="route"></i>Full ArduPilot/PX4 Telemetry</li>
+                        <li><i data-lucide="map"></i>Territory Mapping</li>
+                        <li><i data-lucide="search"></i>Deep Rear Reconnaissance</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ML Pipeline Section -->
+    <section id="ml-pipeline" class="section ml-pipeline-section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">
+                    <i data-lucide="brain"></i>
+                    <span>Machine Learning</span>
+                </div>
+                <h2 class="section-title">ML/AI Pipeline for Autonomous Systems</h2>
+                <p class="section-description">Complete data processing and model training cycle for four autonomous UAV modules</p>
+            </div>
+
+            <!-- Pipeline Overview -->
+            <div class="pipeline-overview">
+                <div class="pipeline-intro">
+                    <h3><i data-lucide="workflow"></i>Intelligent System Architecture</h3>
+                    <p>Integrated machine learning platform to ensure full autonomy of combat UAVs through four interconnected modules: navigation, targeting, target detection, and target classification.</p>
+                </div>
+
+                <!-- Data Flow Diagram -->
+                <div class="data-flow-diagram">
+                    <div class="flow-stage">
+                        <div class="stage-icon">
+                            <i data-lucide="database"></i>
+                        </div>
+                        <h4>Data Collection</h4>
+                        <div class="stage-metrics">
+                            <span class="metric">500+ TB</span>
+                            <span class="metric-label">Raw Data</span>
+                        </div>
+                    </div>
+                    <div class="flow-arrow"><i data-lucide="arrow-right"></i></div>
+                    <div class="flow-stage">
+                        <div class="stage-icon">
+                            <i data-lucide="filter"></i>
+                        </div>
+                        <h4>Processing</h4>
+                        <div class="stage-metrics">
+                            <span class="metric">150+ TB</span>
+                            <span class="metric-label">Clean Data</span>
+                        </div>
+                    </div>
+                    <div class="flow-arrow"><i data-lucide="arrow-right"></i></div>
+                    <div class="flow-stage">
+                        <div class="stage-icon">
+                            <i data-lucide="tag"></i>
+                        </div>
+                        <h4>Labeling</h4>
+                        <div class="stage-metrics">
+                            <span class="metric">80+ TB</span>
+                            <span class="metric-label">Labeled Data</span>
+                        </div>
+                    </div>
+                    <div class="flow-arrow"><i data-lucide="arrow-right"></i></div>
+                    <div class="flow-stage">
+                        <div class="stage-icon">
+                            <i data-lucide="cpu"></i>
+                        </div>
+                        <h4>Training</h4>
+                        <div class="stage-metrics">
+                            <span class="metric">300K+</span>
+                            <span class="metric-label">Episodes</span>
+                        </div>
+                    </div>
+                    <div class="flow-arrow"><i data-lucide="arrow-right"></i></div>
+                    <div class="flow-stage">
+                        <div class="stage-icon">
+                            <i data-lucide="rocket"></i>
+                        </div>
+                        <h4>Deployment</h4>
+                        <div class="stage-metrics">
+                            <span class="metric">&lt;10ms</span>
+                            <span class="metric-label">Latency</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 4 Autonomous Modules -->
+            <div class="ml-modules-grid">
+                
+                <!-- Module 1: Autopilot -->
+                <div class="ml-module-card" data-module="autopilot">
+                    <div class="module-header">
+                        <div class="module-icon">
+                            <i data-lucide="navigation"></i>
+                        </div>
+                        <div class="module-title-block">
+                            <h3>Autonomous Flight</h3>
+                            <p class="module-subtitle">Autonomous Flight Control</p>
+                        </div>
+                    </div>
+                    <div class="module-content">
+                        <p class="module-description">Autonomous flight control system without operator intervention, with ability to adapt to weather changes and EW avoidance</p>
+                        
+                        <div class="module-stats">
+                            <div class="module-stat">
+                                <i data-lucide="clock"></i>
+                                <span class="stat-value">15,000+</span>
+                                <span class="stat-label">flight hours</span>
+                            </div>
+                            <div class="module-stat">
+                                <i data-lucide="activity"></i>
+                                <span class="stat-value">100 Hz</span>
+                                <span class="stat-label">data frequency</span>
+                            </div>
+                            <div class="module-stat">
+                                <i data-lucide="target"></i>
+                                <span class="stat-value">&lt;5m</span>
+                                <span class="stat-label">accuracy</span>
+                            </div>
+                        </div>
+
+                        <div class="data-sources">
+                            <h4><i data-lucide="folder"></i>Data Sources</h4>
+                            <ul>
+                                <li><i data-lucide="satellite"></i>GPS/IMU telemetry (9-axis, 100 Hz)</li>
+                                <li><i data-lucide="wind"></i>Weather and wind data</li>
+                                <li><i data-lucide="gamepad-2"></i>PWM control signals (400 Hz)</li>
+                                <li><i data-lucide="monitor"></i>50,000+ simulation hours (AirSim/Gazebo)</li>
+                            </ul>
+                        </div>
+
+                        <div class="ml-tech-stack">
+                            <h4><i data-lucide="layers"></i>Tech Stack</h4>
+                            <div class="tech-badges-grid">
+                                <span class="tech-badge">PPO + LSTM</span>
+                                <span class="tech-badge">Reinforcement Learning</span>
+                                <span class="tech-badge">PyTorch</span>
+                                <span class="tech-badge">Stable-Baselines3</span>
+                            </div>
+                        </div>
+
+                        <div class="performance-metrics">
+                            <h4><i data-lucide="bar-chart-3"></i>Performance Metrics</h4>
+                            <div class="metrics-grid">
+                                <div class="metric-item">
+                                    <div class="metric-bar" style="--progress: 95%"></div>
+                                    <span class="metric-name">Mission Completion</span>
+                                    <span class="metric-value">95%</span>
+                                </div>
+                                <div class="metric-item">
+                                    <div class="metric-bar" style="--progress: 98%"></div>
+                                    <span class="metric-name">Waypoint Accuracy</span>
+                                    <span class="metric-value">98%</span>
+                                </div>
+                                <div class="metric-item">
+                                    <div class="metric-bar" style="--progress: 90%"></div>
+                                    <span class="metric-name">Flight Stability</span>
+                                    <span class="metric-value">90%</span>
+                                </div>
+                                <div class="metric-item">
+                                    <div class="metric-bar" style="--progress: 99%"></div>
+                                    <span class="metric-name">Safety (no collisions)</span>
+                                    <span class="metric-value">99%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Module 2: Auto-Targeting -->
+                <div class="ml-module-card" data-module="targeting">
+                    <div class="module-header">
+                        <div class="module-icon">
+                            <i data-lucide="crosshair"></i>
+                        </div>
+                        <div class="module-title-block">
+                            <h3>Auto-Targeting</h3>
+                            <p class="module-subtitle">Precision Auto-Targeting</p>
+                        </div>
+                    </div>
+                    <div class="module-content">
+                        <p class="module-description">Precision targeting system for combat payloads considering target movement, UAV motion, ballistics, and environmental factors</p>
+                        
+                        <div class="module-stats">
+                            <div class="module-stat">
+                                <i data-lucide="video"></i>
+                                <span class="stat-value">25,000+</span>
+                                <span class="stat-label">video hours</span>
+                            </div>
+                            <div class="module-stat">
+                                <i data-lucide="crosshair"></i>
+                                <span class="stat-value">5,000+</span>
+                                <span class="stat-label">successful hits</span>
+                            </div>
+                            <div class="module-stat">
+                                <i data-lucide="gauge"></i>
+                                <span class="stat-value">30 FPS</span>
+                                <span class="stat-label">video processing</span>
+                            </div>
+                        </div>
+
+                        <div class="data-sources">
+                            <h4><i data-lucide="folder"></i>Data Sources</h4>
+                            <ul>
+                                <li><i data-lucide="camera"></i>Target video (RGB, thermal, 1080p+)</li>
+                                <li><i data-lucide="navigation-2"></i>Gimbal telemetry</li>
+                                <li><i data-lucide="map-pin"></i>GPS coordinates of target and UAV</li>
+                                <li><i data-lucide="wind"></i>Ballistic calculations and wind</li>
+                            </ul>
+                        </div>
+
+                        <div class="ml-tech-stack">
+                            <h4><i data-lucide="layers"></i>Tech Stack</h4>
+                            <div class="tech-badges-grid">
+                                <span class="tech-badge">Kalman Filter</span>
+                                <span class="tech-badge">Optical Flow</span>
+                                <span class="tech-badge">PID Controller</span>
+                                <span class="tech-badge">Deep SORT</span>
+                            </div>
+                        </div>
+
+                        <div class="performance-metrics">
+                            <h4><i data-lucide="bar-chart-3"></i>Performance Metrics</h4>
+                            <div class="metrics-grid">
+                                <div class="metric-item">
+                                    <div class="metric-bar" style="--progress: 92%"></div>
+                                    <span class="metric-name">Hit Accuracy</span>
+                                    <span class="metric-value">92%</span>
+                                </div>
+                                <div class="metric-item">
+                                    <div class="metric-bar" style="--progress: 88%"></div>
+                                    <span class="metric-name">Tracking Stability</span>
+                                    <span class="metric-value">88%</span>
+                                </div>
+                                <div class="metric-item">
+                                    <div class="metric-bar" style="--progress: 85%"></div>
+                                    <span class="metric-name">Moving Targets</span>
+                                    <span class="metric-value">85%</span>
+                                </div>
+                                <div class="metric-item">
+                                    <div class="metric-bar" style="--progress: 15%"></div>
+                                    <span class="metric-name">Average Deviation</span>
+                                    <span class="metric-value">1.5m</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Module 3: Target Search -->
+                <div class="ml-module-card" data-module="search">
+                    <div class="module-header">
+                        <div class="module-icon">
+                            <i data-lucide="scan-search"></i>
+                        </div>
+                        <div class="module-title-block">
+                            <h3>Target Search</h3>
+                            <p class="module-subtitle">Target Search & Detection</p>
+                        </div>
+                    </div>
+                    <div class="module-content">
+                        <p class="module-description">Autonomous real-time object search and detection system with analysis of thermal and RGB imagery</p>
+                        
+                        <div class="module-stats">
+                            <div class="module-stat">
+                                <i data-lucide="image"></i>
+                                <span class="stat-value">2.5M+</span>
+                                <span class="stat-label">labeled images</span>
+                            </div>
+                            <div class="module-stat">
+                                <i data-lucide="layers-2"></i>
+                                <span class="stat-value">45</span>
+                                <span class="stat-label">object classes</span>
+                            </div>
+                            <div class="module-stat">
+                                <i data-lucide="zap"></i>
+                                <span class="stat-value">60 FPS</span>
+                                <span class="stat-label">on Jetson Orin</span>
+                            </div>
+                        </div>
+
+                        <div class="data-sources">
+                            <h4><i data-lucide="folder"></i>Data Sources</h4>
+                            <ul>
+                                <li><i data-lucide="image"></i>2.5M+ labeled images (RGB + thermal)</li>
+                                <li><i data-lucide="video"></i>8,000+ hours of reconnaissance video</li>
+                                <li><i data-lucide="satellite"></i>Satellite imagery (Sentinel, Landsat)</li>
+                                <li><i data-lucide="bot"></i>Synthetic data (GAN, Unreal Engine)</li>
+                            </ul>
+                        </div>
+
+                        <div class="ml-tech-stack">
+                            <h4><i data-lucide="layers"></i>Tech Stack</h4>
+                            <div class="tech-badges-grid">
+                                <span class="tech-badge">YOLO v9</span>
+                                <span class="tech-badge">SAM (Segment Anything)</span>
+                                <span class="tech-badge">TensorRT</span>
+                                <span class="tech-badge">OpenCV</span>
+                            </div>
+                        </div>
+
+                        <div class="performance-metrics">
+                            <h4><i data-lucide="bar-chart-3"></i>Performance Metrics</h4>
+                            <div class="metrics-grid">
+                                <div class="metric-item">
+                                    <div class="metric-bar" style="--progress: 94%"></div>
+                                    <span class="metric-name">mAP@0.5</span>
+                                    <span class="metric-value">94%</span>
+                                </div>
+                                <div class="metric-item">
+                                    <div class="metric-bar" style="--progress: 89%"></div>
+                                    <span class="metric-name">Recall</span>
+                                    <span class="metric-value">89%</span>
+                                </div>
+                                <div class="metric-item">
+                                    <div class="metric-bar" style="--progress: 92%"></div>
+                                    <span class="metric-name">Precision</span>
+                                    <span class="metric-value">92%</span>
+                                </div>
+                                <div class="metric-item">
+                                    <div class="metric-bar" style="--progress: 16%"></div>
+                                    <span class="metric-name">Inference Time</span>
+                                    <span class="metric-value">16ms</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Module 4: Target Classification -->
+                <div class="ml-module-card" data-module="classification">
+                    <div class="module-header">
+                        <div class="module-icon">
+                            <i data-lucide="scan-eye"></i>
+                        </div>
+                        <div class="module-title-block">
+                            <h3>Target Classification</h3>
+                            <p class="module-subtitle">Target Classification & Recognition</p>
+                        </div>
+                    </div>
+                    <div class="module-content">
+                        <p class="module-description">Detailed classification of detected objects with identification of equipment type, weapons, and target priority</p>
+                        
+                        <div class="module-stats">
+                            <div class="module-stat">
+                                <i data-lucide="database"></i>
+                                <span class="stat-value">1.2M+</span>
+                                <span class="stat-label">equipment samples</span>
+                            </div>
+                            <div class="module-stat">
+                                <i data-lucide="layers"></i>
+                                <span class="stat-value">150+</span>
+                                <span class="stat-label">object types</span>
+                            </div>
+                            <div class="module-stat">
+                                <i data-lucide="shield-check"></i>
+                                <span class="stat-value">97.5%</span>
+                                <span class="stat-label">accuracy</span>
+                            </div>
+                        </div>
+
+                        <div class="data-sources">
+                            <h4><i data-lucide="folder"></i>Data Sources</h4>
+                            <ul>
+                                <li><i data-lucide="image"></i>1.2M+ equipment images (various angles)</li>
+                                <li><i data-lucide="book-open"></i>Open datasets (xView, DOTA, VEDAI)</li>
+                                <li><i data-lucide="video"></i>Theater of war footage (4,500+ hours)</li>
+                                <li><i data-lucide="shield"></i>Classified data from partners</li>
+                            </ul>
+                        </div>
+
+                        <div class="ml-tech-stack">
+                            <h4><i data-lucide="layers"></i>Tech Stack</h4>
+                            <div class="tech-badges-grid">
+                                <span class="tech-badge">EfficientNet-V2</span>
+                                <span class="tech-badge">Vision Transformer</span>
+                                <span class="tech-badge">Ensemble Models</span>
+                                <span class="tech-badge">TensorFlow</span>
+                            </div>
+                        </div>
+
+                        <div class="performance-metrics">
+                            <h4><i data-lucide="bar-chart-3"></i>Performance Metrics</h4>
+                            <div class="metrics-grid">
+                                <div class="metric-item">
+                                    <div class="metric-bar" style="--progress: 97%"></div>
+                                    <span class="metric-name">Top-1 Accuracy</span>
+                                    <span class="metric-value">97.5%</span>
+                                </div>
+                                <div class="metric-item">
+                                    <div class="metric-bar" style="--progress: 99%"></div>
+                                    <span class="metric-name">Top-5 Accuracy</span>
+                                    <span class="metric-value">99.2%</span>
+                                </div>
+                                <div class="metric-item">
+                                    <div class="metric-bar" style="--progress: 95%"></div>
+                                    <span class="metric-name">Confusion Matrix</span>
+                                    <span class="metric-value">95%</span>
+                                </div>
+                                <div class="metric-item">
+                                    <div class="metric-bar" style="--progress: 12%"></div>
+                                    <span class="metric-name">Inference Time</span>
+                                    <span class="metric-value">12ms</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Training Infrastructure -->
+            <div class="training-infrastructure">
+                <h3><i data-lucide="server"></i>Training Infrastructure</h3>
+                <div class="infra-grid">
+                    <div class="infra-card">
+                        <i data-lucide="cpu"></i>
+                        <h4>GPU Cluster</h4>
+                        <ul>
+                            <li>32x NVIDIA A100 (80GB)</li>
+                            <li>16x NVIDIA H100</li>
+                            <li>Distributed training (Horovod)</li>
+                            <li>Mixed precision (FP16/BF16)</li>
+                        </ul>
+                    </div>
+                    <div class="infra-card">
+                        <i data-lucide="hard-drive"></i>
+                        <h4>Data Storage</h4>
+                        <ul>
+                            <li>500+ TB raw data (S3/MinIO)</li>
+                            <li>150+ TB processed (NVMe)</li>
+                            <li>DVC versioning</li>
+                            <li>Geo-replicated backup</li>
+                        </ul>
+                    </div>
+                    <div class="infra-card">
+                        <i data-lucide="workflow"></i>
+                        <h4>MLOps Pipeline</h4>
+                        <ul>
+                            <li>MLflow tracking</li>
+                            <li>Kubeflow orchestration</li>
+                            <li>CI/CD automation</li>
+                            <li>A/B testing framework</li>
+                        </ul>
+                    </div>
+                    <div class="infra-card">
+                        <i data-lucide="shield"></i>
+                        <h4>Edge Deployment</h4>
+                        <ul>
+                            <li>NVIDIA Jetson AGX Orin</li>
+                            <li>TensorRT optimization</li>
+                            <li>INT8 quantization</li>
+                            <li>&lt;10ms latency guarantee</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Key Technologies -->
+            <div class="key-technologies">
+                <h3><i data-lucide="sparkles"></i>Key Technologies</h3>
+                <div class="tech-categories">
+                    <div class="tech-category">
+                        <h4><i data-lucide="brain"></i>Deep Learning</h4>
+                        <div class="tech-items">
+                            <span class="tech-item">PyTorch 2.0+</span>
+                            <span class="tech-item">TensorFlow 2.x</span>
+                            <span class="tech-item">JAX/Flax</span>
+                            <span class="tech-item">ONNX Runtime</span>
+                        </div>
+                    </div>
+                    <div class="tech-category">
+                        <h4><i data-lucide="eye"></i>Computer Vision</h4>
+                        <div class="tech-items">
+                            <span class="tech-item">YOLO v8/v9</span>
+                            <span class="tech-item">SAM</span>
+                            <span class="tech-item">OpenCV</span>
+                            <span class="tech-item">Detectron2</span>
+                        </div>
+                    </div>
+                    <div class="tech-category">
+                        <h4><i data-lucide="gamepad-2"></i>Reinforcement Learning</h4>
+                        <div class="tech-items">
+                            <span class="tech-item">Stable-Baselines3</span>
+                            <span class="tech-item">Ray RLlib</span>
+                            <span class="tech-item">PPO/SAC/TD3</span>
+                            <span class="tech-item">AirSim/Gazebo</span>
+                        </div>
+                    </div>
+                    <div class="tech-category">
+                        <h4><i data-lucide="database"></i>Data Processing</h4>
+                        <div class="tech-items">
+                            <span class="tech-item">Apache Spark</span>
+                            <span class="tech-item">Kafka/Flink</span>
+                            <span class="tech-item">Pandas/Polars</span>
+                            <span class="tech-item">DVC</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Security & Compliance -->
+            <div class="security-compliance">
+                <h3><i data-lucide="shield-check"></i>Security & Compliance</h3>
+                <div class="compliance-grid">
+                    <div class="compliance-card">
+                        <i data-lucide="lock"></i>
+                        <h4>NATO SECRET</h4>
+                        <p>Data encryption, secure transmission protocols, access control</p>
+                    </div>
+                    <div class="compliance-card">
+                        <i data-lucide="plug"></i>
+                        <h4>STANAG 4586</h4>
+                        <p>NATO systems compatibility, unified interfaces, interchangeability</p>
+                    </div>
+                    <div class="compliance-card">
+                        <i data-lucide="file-check"></i>
+                        <h4>ISO 27001</h4>
+                        <p>Information security management, system audits, risk management</p>
+                    </div>
+                    <div class="compliance-card">
+                        <i data-lucide="shield-alert"></i>
+                        <h4>Adversarial Defense</h4>
+                        <p>Model attack protection, noise robustness, decision verification</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- NATO Standards Section -->
+    <section id="nato" class="section nato-section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">
+                    <i data-lucide="globe"></i>
+                    <span>Standards</span>
+                </div>
+                <h2 class="section-title">NATO UAV Standards Knowledge Base</h2>
+                <p class="section-description">Comprehensive overview of existing and future unmanned systems integration standards</p>
+            </div>
+
+            <!-- Wiki Navigation -->
+            <div class="wiki-nav">
+                <a href="#nato-intro" class="wiki-nav-link"><i data-lucide="book-open"></i>Introduction</a>
+                <a href="#nato-existing" class="wiki-nav-link"><i data-lucide="check-circle"></i>Active Standards</a>
+                <a href="#nato-development" class="wiki-nav-link"><i data-lucide="code"></i>In Development</a>
+                <a href="#nato-roadmap" class="wiki-nav-link"><i data-lucide="map"></i>Roadmap</a>
+            </div>
+
+            <!-- Introduction -->
+            <div id="nato-intro" class="wiki-section">
+                <div class="wiki-header">
+                    <i data-lucide="info"></i>
+                    <h3>Introduction to STANAG Standards</h3>
+                </div>
+                <div class="wiki-content">
+                    <p>STANAG (Standardization Agreement) are documents establishing unified standards for NATO member countries. In the UAV field, they ensure <strong>operational compatibility</strong>, security, and efficient use of unmanned systems in joint operations.</p>
+                    <div class="wiki-info-box">
+                        <i data-lucide="alert-circle"></i>
+                        <div>
+                            <strong>Critical importance for Ukraine:</strong>
+                            <p>Implementation of NATO standards is a key factor in integrating the Armed Forces of Ukraine into the Alliance structures, ensuring full compatibility with partner equipment and systems.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Existing Standards -->
+            <div id="nato-existing" class="wiki-section">
+                <div class="wiki-header">
+                    <i data-lucide="shield-check"></i>
+                    <h3>Active NATO UAV Standards</h3>
+                </div>
+                <div class="wiki-content">
+                    
+                    <div class="standard-card">
+                        <div class="standard-header">
+                            <div class="standard-badge">STANAG 4586</div>
+                            <span class="status-badge active">Active</span>
+                        </div>
+                        <h4><i data-lucide="plug"></i>Standard Interface for UAV Control Systems</h4>
+                        <p class="standard-desc">Defines the interaction architecture between ground control stations and unmanned platforms from different manufacturers.</p>
+                        <div class="standard-details">
+                            <div class="detail-row">
+                                <strong>Scope:</strong>
+                                <span>All types of UAVs (FPV, reconnaissance, fixed-wing)</span>
+                            </div>
+                            <div class="detail-row">
+                                <strong>Versions:</strong>
+                                <span>Edition 1, 2, 3, 4 (current)</span>
+                            </div>
+                            <div class="detail-row">
+                                <strong>Key capabilities:</strong>
+                                <ul>
+                                    <li>Unified command transmission protocol</li>
+                                    <li>Telemetry standardization</li>
+                                    <li>Control system interchangeability</li>
+                                    <li>Integration with C4ISR systems</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="standard-card">
+                        <div class="standard-header">
+                            <div class="standard-badge">STANAG 4671</div>
+                            <span class="status-badge active">Active</span>
+                        </div>
+                        <h4><i data-lucide="plane"></i>UAV Airworthiness Requirements</h4>
+                        <p class="standard-desc">Establishes requirements for safe operation of fixed-wing UAVs weighing from 150 kg to 20 tons.</p>
+                        <div class="standard-details">
+                            <div class="detail-row">
+                                <strong>UAV categories:</strong>
+                                <span>Medium and heavy fixed-wing UAVs</span>
+                            </div>
+                            <div class="detail-row">
+                                <strong>Covers:</strong>
+                                <ul>
+                                    <li>Structural strength and aerodynamics</li>
+                                    <li>Propulsion systems</li>
+                                    <li>Electronic control systems</li>
+                                    <li>Certification procedures</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="standard-card">
+                        <div class="standard-header">
+                            <div class="standard-badge">STANAG 4703</div>
+                            <span class="status-badge active">Active</span>
+                        </div>
+                        <h4><i data-lucide="radio"></i>UAV Communication and Control Systems</h4>
+                        <p class="standard-desc">Defines requirements for reliable data transmission between UAVs and ground stations in electronic warfare conditions.</p>
+                        <div class="standard-details">
+                            <div class="detail-row">
+                                <strong>Frequency bands:</strong>
+                                <span>VHF, UHF, L-band, Ku-band, Ka-band</span>
+                            </div>
+                            <div class="detail-row">
+                                <strong>Protection:</strong>
+                                <ul>
+                                    <li>NATO standard encryption</li>
+                                    <li>Interception protection</li>
+                                    <li>Jamming resistance</li>
+                                    <li>Authentication and access control</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="standard-card">
+                        <div class="standard-header">
+                            <div class="standard-badge">OGC</div>
+                            <span class="status-badge active">Active</span>
+                        </div>
+                        <h4><i data-lucide="map-pin"></i>Geospatial Standards</h4>
+                        <p class="standard-desc">Geospatial data exchange formats (KML, GML, WMS) for integration with NATO command systems.</p>
+                        <div class="standard-details">
+                            <div class="detail-row">
+                                <strong>Formats:</strong>
+                                <span>KML, GeoJSON, WMS, WFS, WMTS</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="standard-card">
+                        <div class="standard-header">
+                            <div class="standard-badge">NATO SECRET</div>
+                            <span class="status-badge active">Active</span>
+                        </div>
+                        <h4><i data-lucide="lock-keyhole"></i>Information Security</h4>
+                        <p class="standard-desc">Complex of information protection standards for processing and transmission of classified data.</p>
+                        <div class="standard-details">
+                            <div class="detail-row">
+                                <strong>Classification levels:</strong>
+                                <span>UNCLASSIFIED, RESTRICTED, CONFIDENTIAL, SECRET, COSMIC TOP SECRET</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Standards in Development -->
+            <div id="nato-development" class="wiki-section">
+                <div class="wiki-header">
+                    <i data-lucide="code"></i>
+                    <h3>Standards in Development</h3>
+                </div>
+                <div class="wiki-content">
+                    
+                    <div class="standard-card">
+                        <div class="standard-header">
+                            <div class="standard-badge">STANAG 4746</div>
+                            <span class="status-badge development">In Development</span>
+                        </div>
+                        <h4><i data-lucide="shield"></i>Unmanned Systems Cybersecurity</h4>
+                        <p class="standard-desc">Comprehensive standard for protecting UAVs from cyberattacks, GPS spoofing, and control hijacking.</p>
+                        <div class="standard-details">
+                            <div class="detail-row">
+                                <strong>Expected implementation date:</strong>
+                                <span class="date-badge">2028-2030</span>
+                            </div>
+                            <div class="detail-row">
+                                <strong>Key directions:</strong>
+                                <ul>
+                                    <li>Protection against satellite navigation spoofing</li>
+                                    <li>Control channel encryption</li>
+                                    <li>Unauthorized access detection</li>
+                                    <li>Secure software updates</li>
+                                    <li>Supply chain attack protection</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="standard-card">
+                        <div class="standard-header">
+                            <div class="standard-badge">STANAG 4785</div>
+                            <span class="status-badge development">In Development</span>
+                        </div>
+                        <h4><i data-lucide="plane-landing"></i>UAV Integration into General Airspace</h4>
+                        <p class="standard-desc">Standard for safe coexistence of manned and unmanned aircraft in unified airspace.</p>
+                        <div class="standard-details">
+                            <div class="detail-row">
+                                <strong>Expected implementation date:</strong>
+                                <span class="date-badge">2030-2032</span>
+                            </div>
+                            <div class="detail-row">
+                                <strong>Main requirements:</strong>
+                                <ul>
+                                    <li>Collision avoidance systems (DAA - Detect and Avoid)</li>
+                                    <li>ATC (Air Traffic Control) integration</li>
+                                    <li>Transponders and identification</li>
+                                    <li>Controlled airspace flight procedures</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="standard-card">
+                        <div class="standard-header">
+                            <div class="standard-badge">STANAG 48XX</div>
+                            <span class="status-badge planning">Planned</span>
+                        </div>
+                        <h4><i data-lucide="cpu"></i>Autonomous UAVs with Artificial Intelligence</h4>
+                        <p class="standard-desc">Standards for UAVs with high autonomy levels and AI-based decision-making systems.</p>
+                        <div class="standard-details">
+                            <div class="detail-row">
+                                <strong>Target date:</strong>
+                                <span class="date-badge">2035-2040</span>
+                            </div>
+                            <div class="detail-row">
+                                <strong>Regulatory scope:</strong>
+                                <ul>
+                                    <li>Ethical principles of AI use</li>
+                                    <li>Autonomy levels (LOA 1-5)</li>
+                                    <li>Human-in-the-loop / Human-on-the-loop</li>
+                                    <li>Transparency and explainability of AI decisions</li>
+                                    <li>Validation and testing procedures</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="standard-card">
+                        <div class="standard-header">
+                            <div class="standard-badge">STANAG 49XX</div>
+                            <span class="status-badge planning">Planned</span>
+                        </div>
+                        <h4><i data-lucide="network"></i>UAV Swarm Operations</h4>
+                        <p class="standard-desc">Standards for coordination and control of UAV groups for joint mission execution.</p>
+                        <div class="standard-details">
+                            <div class="detail-row">
+                                <strong>Target date:</strong>
+                                <span class="date-badge">2038-2042</span>
+                            </div>
+                            <div class="detail-row">
+                                <strong>Key aspects:</strong>
+                                <ul>
+                                    <li>Distributed swarm control</li>
+                                    <li>Autonomous coordination between UAVs</li>
+                                    <li>Dynamic task redistribution</li>
+                                    <li>Scalability up to 1000+ units</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="standard-card">
+                        <div class="standard-header">
+                            <div class="standard-badge">STANAG 50XX</div>
+                            <span class="status-badge planning">Planned</span>
+                        </div>
+                        <h4><i data-lucide="zap"></i>Energy Efficiency and Alternative Sources</h4>
+                        <p class="standard-desc">Requirements for UAV energy efficiency and use of renewable energy sources.</p>
+                        <div class="standard-details">
+                            <div class="detail-row">
+                                <strong>Target date:</strong>
+                                <span class="date-badge">2032-2035</span>
+                            </div>
+                            <div class="detail-row">
+                                <strong>Technologies:</strong>
+                                <ul>
+                                    <li>Hydrogen fuel cells</li>
+                                    <li>High-efficiency solar panels</li>
+                                    <li>Hybrid propulsion systems</li>
+                                    <li>Wireless power transmission</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Roadmap to 2050 -->
+            <div id="nato-roadmap" class="wiki-section">
+                <div class="wiki-header">
+                    <i data-lucide="map"></i>
+                    <h3>Standardization Roadmap to 2050</h3>
+                </div>
+                <div class="wiki-content">
+                    
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-year">2025-2030</div>
+                            <div class="timeline-content">
+                                <h4>Phase 1: Cybersecurity and Integration</h4>
+                                <ul>
+                                    <li>Completion of STANAG 4746 (cybersecurity)</li>
+                                    <li>Implementation of STANAG 4785 (airspace integration)</li>
+                                    <li>STANAG 4586 update to Edition 5</li>
+                                    <li>Harmonization with civil ICAO standards</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-year">2030-2040</div>
+                            <div class="timeline-content">
+                                <h4>Phase 2: Autonomy and Artificial Intelligence</h4>
+                                <ul>
+                                    <li>Standards for autonomous UAVs (LOA 3-5)</li>
+                                    <li>Regulation of AI use in combat systems</li>
+                                    <li>Beginning of swarm standards implementation</li>
+                                    <li>Alternative energy sources</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-year">2040-2050</div>
+                            <div class="timeline-content">
+                                <h4>Phase 3: Full Integration and New Concepts</h4>
+                                <ul>
+                                    <li>Joint operations of manned and unmanned systems</li>
+                                    <li>Mass deployment of UAV swarms</li>
+                                    <li>Quantum communication and encryption systems</li>
+                                    <li>Hypersonic and space unmanned platforms</li>
+                                    <li>Bio-inspired and adaptive systems</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="wiki-info-box highlight">
+                        <i data-lucide="target"></i>
+                        <div>
+                            <strong>NATO Strategic Goal:</strong>
+                            <p>By 2050, create a fully integrated ecosystem of manned and unmanned systems capable of autonomous coordination at all operational levels - from tactical to strategic.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Additional Resources -->
+            <div class="wiki-section">
+                <div class="wiki-header">
+                    <i data-lucide="book-open"></i>
+                    <h3>Additional Resources</h3>
+                </div>
+                <div class="wiki-content">
+                    <div class="resources-grid">
+                        <div class="resource-card">
+                            <i data-lucide="file-text"></i>
+                            <h4>NATO Documentation</h4>
+                            <p>Official STANAG documents</p>
+                        </div>
+                        <div class="resource-card">
+                            <i data-lucide="graduation-cap"></i>
+                            <h4>Training Materials</h4>
+                            <p>Courses and certifications</p>
+                        </div>
+                        <div class="resource-card">
+                            <i data-lucide="users"></i>
+                            <h4>Community</h4>
+                            <p>Engineers and operators forum</p>
+                        </div>
+                        <div class="resource-card">
+                            <i data-lucide="tool"></i>
+                            <h4>Tools</h4>
+                            <p>Compatibility testing software</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Capabilities Section -->
+    <section id="capabilities" class="section capabilities-section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">
+                    <i data-lucide="brain"></i>
+                    <span>Capabilities</span>
+                </div>
+                <h2 class="section-title">Our Technologies</h2>
+            </div>
+            <div class="capabilities-grid">
+                <div class="capability-card">
+                    <div class="capability-icon">
+                        <i data-lucide="database"></i>
+                    </div>
+                    <h3>Unified Data Reception</h3>
+                    <p>Adapters and gateways for receiving data from any type of drone, converting proprietary streams into standardized format.</p>
+                    <div class="tech-stack">
+                        <span class="tech-badge">STANAG 4586</span>
+                        <span class="tech-badge">API Gateway</span>
+                    </div>
+                </div>
+                <div class="capability-card">
+                    <div class="capability-icon">
+                        <i data-lucide="layers-3"></i>
+                    </div>
+                    <h3>Common Operational Picture</h3>
+                    <p>Data from all drones in real-time is plotted on a single digital map. Full situational awareness for command.</p>
+                    <div class="tech-stack">
+                        <span class="tech-badge">GIS</span>
+                        <span class="tech-badge">Real-time</span>
+                    </div>
+                </div>
+                <div class="capability-card">
+                    <div class="capability-icon">
+                        <i data-lucide="scan-eye"></i>
+                    </div>
+                    <h3>Computer Vision</h3>
+                    <p>Automatic target recognition (ATR). Real-time algorithms analyze video, identifying vehicles and personnel.</p>
+                    <div class="tech-stack">
+                        <span class="tech-badge">AI/ML</span>
+                        <span class="tech-badge">Object Detection</span>
+                    </div>
+                </div>
+                <div class="capability-card">
+                    <div class="capability-icon">
+                        <i data-lucide="tracking"></i>
+                    </div>
+                    <h3>Target Tracking</h3>
+                    <p>Algorithms don't lose the target even if it temporarily hides. Movement and trajectory prediction.</p>
+                    <div class="tech-stack">
+                        <span class="tech-badge">Tracking</span>
+                        <span class="tech-badge">Prediction</span>
+                    </div>
+                </div>
+                <div class="capability-card">
+                    <div class="capability-icon">
+                        <i data-lucide="box-select"></i>
+                    </div>
+                    <h3>3D Modeling</h3>
+                    <p>Automatic stitching of thousands of images into accurate 2D maps and 3D terrain models for operation planning.</p>
+                    <div class="tech-stack">
+                        <span class="tech-badge">Photogrammetry</span>
+                        <span class="tech-badge">3D Mapping</span>
+                    </div>
+                </div>
+                <div class="capability-card">
+                    <div class="capability-icon">
+                        <i data-lucide="line-chart"></i>
+                    </div>
+                    <h3>Predictive Analytics</h3>
+                    <p>Analysis of enemy equipment movement patterns to predict locations and plan ambushes.</p>
+                    <div class="tech-stack">
+                        <span class="tech-badge">Predictive AI</span>
+                        <span class="tech-badge">Pattern Analysis</span>
+                    </div>
+                </div>
+                <div class="capability-card">
+                    <div class="capability-icon">
+                        <i data-lucide="settings"></i>
+                    </div>
+                    <h3>Predictive Maintenance</h3>
+                    <p>Predicting drone failures through vibrations, current consumption and other telemetry parameters.</p>
+                    <div class="tech-stack">
+                        <span class="tech-badge">Telemetry</span>
+                        <span class="tech-badge">Kafka/Flink</span>
+                    </div>
+                </div>
+                <div class="capability-card">
+                    <div class="capability-icon">
+                        <i data-lucide="lock-keyhole"></i>
+                    </div>
+                    <h3>Cybersecurity</h3>
+                    <p>End-to-end data encryption, VPN usage, secure transmission protocols. NATO SECRET compliance.</p>
+                    <div class="tech-stack">
+                        <span class="tech-badge">Encryption</span>
+                        <span class="tech-badge">VPN</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <div class="footer-logo">
+                        <i data-lucide="radar"></i>
+                        <span>DATADOG</span>
+                    </div>
+                    <p class="footer-description">The invisible shield of the Ukrainian army. Intelligence & Data Analytics for UAF.</p>
+                </div>
+                <div class="footer-right">
+                    <div class="footer-section">
+                        <h4>Technologies</h4>
+                        <ul>
+                            <li>Machine Learning</li>
+                            <li>Computer Vision</li>
+                            <li>Real-time Analytics</li>
+                            <li>Predictive AI</li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Standards</h4>
+                        <ul>
+                            <li>STANAG 4586</li>
+                            <li>OGC Standards</li>
+                            <li>NATO SECRET</li>
+                            <li>ISO 27001</li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Contact</h4>
+                        <div class="footer-contact">
+                            <div class="contact-item">
+                                <i data-lucide="globe"></i>
+                                <a href="https://datadog.s0me.uk" style="color: inherit; text-decoration: none;">datadog.s0me.uk</a>
+                            </div>
+                            <div class="contact-item">
+                                <i data-lucide="mail"></i>
+                                <span>info@s0me.uk</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 DATADOG. All rights reserved. Slava Ukraini.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        function switchLanguage(lang) {
+            const langMap = {
+                'en': 'index-en.html',
+                'uk': 'index.html',
+                'ja': 'index-ja.html'
+            };
+            window.location.href = langMap[lang];
+        }
+        document.getElementById('langSelect').value = 'en';
+    </script>
+</body>
+</html>
+

@@ -1,0 +1,347 @@
+{
+  "timestamp": "2025-10-05T13:10:31.901Z",
+  "summary": {
+    "total": 42,
+    "passed": 0,
+    "failed": 42,
+    "successRate": 0
+  },
+  "results": [
+    {
+      "language": "Ukrainian",
+      "languageCode": "uk",
+      "device": "iPhone SE",
+      "resolution": "320x568",
+      "status": "ERROR",
+      "error": "net::ERR_CONNECTION_REFUSED at http://localhost:8080/index.html"
+    },
+    {
+      "language": "Ukrainian",
+      "languageCode": "uk",
+      "device": "iPhone 8",
+      "resolution": "375x667",
+      "status": "ERROR",
+      "error": "net::ERR_CONNECTION_REFUSED at http://localhost:8080/index.html"
+    },
+    {
+      "language": "Ukrainian",
+      "languageCode": "uk",
+      "device": "iPhone 12",
+      "resolution": "390x844",
+      "status": "ERROR",
+      "error": "net::ERR_CONNECTION_REFUSED at http://localhost:8080/index.html"
+    },
+    {
+      "language": "Ukrainian",
+      "languageCode": "uk",
+      "device": "iPhone 14 Pro Max",
+      "resolution": "430x932",
+      "status": "ERROR",
+      "error": "net::ERR_CONNECTION_REFUSED at http://localhost:8080/index.html"
+    },
+    {
+      "language": "Ukrainian",
+      "languageCode": "uk",
+      "device": "Galaxy S20",
+      "resolution": "360x800",
+      "status": "ERROR",
+      "error": "net::ERR_CONNECTION_REFUSED at http://localhost:8080/index.html"
+    },
+    {
+      "language": "Ukrainian",
+      "languageCode": "uk",
+      "device": "Pixel 5",
+      "resolution": "393x851",
+      "status": "ERROR",
+      "error": "net::ERR_CONNECTION_REFUSED at http://localhost:8080/index.html"
+    },
+    {
+      "language": "Ukrainian",
+      "languageCode": "uk",
+      "device": "iPad Mini",
+      "resolution": "768x1024",
+      "status": "ERROR",
+      "error": "net::ERR_CONNECTION_REFUSED at http://localhost:8080/index.html"
+    },
+    {
+      "language": "Ukrainian",
+      "languageCode": "uk",
+      "device": "iPad Air",
+      "resolution": "820x1180",
+      "status": "ERROR",
+      "error": "net::ERR_CONNECTION_REFUSED at http://localhost:8080/index.html"
+    },
+    {
+      "language": "Ukrainian",
+      "languageCode": "uk",
+      "device": "iPad Pro 11",
+      "resolution": "834x1194",
+      "status": "ERROR",
+      "error": "net::ERR_CONNECTION_REFUSED at http://localhost:8080/index.html"
+    },
+    {
+      "language": "Ukrainian",
+      "languageCode": "uk",
+      "device": "iPad Pro 12.9",
+      "resolution": "1024x1366",
+      "status": "ERROR",
+      "error": "net::ERR_CONNECTION_REFUSED at http://localhost:8080/index.html"
+    },
+    {
+      "language": "Ukrainian",
+      "languageCode": "uk",
+      "device": "Laptop",
+      "resolution": "1366x768",
+      "status": "ERROR",
+      "error": "net::ERR_CONNECTION_REFUSED at http://localhost:8080/index.html"
+    },
+    {
+      "language": "Ukrainian",
+      "languageCode": "uk",
+      "device": "Desktop HD",
+      "resolution": "1920x1080",
+      "status": "ERROR",
+      "error": "net::ERR_CONNECTION_REFUSED at http://localhost:8080/index.html"
+    },
+    {
+      "language": "Ukrainian",
+      "languageCode": "uk",
+      "device": "Desktop 2K",
+      "resolution": "2560x1440",
+      "status": "ERROR",
+      "error": "net::ERR_CONNECTION_REFUSED at http://localhost:8080/index.html"
+    },
+    {
+      "language": "Ukrainian",
+      "languageCode": "uk",
+      "device": "Desktop 4K",
+      "resolution": "3840x2160",
+      "status": "ERROR",
+      "error": "net::ERR_CONNECTION_REFUSED at http://localhost:8080/index.html"
+    },
+    {
+      "language": "English",
+      "languageCode": "en",
+      "device": "iPhone SE",
+      "resolution": "320x568",
+      "status": "ERROR",
+      "error": "net::ERR_CONNECTION_REFUSED at http://localhost:8080/index-en.html"
+    },
+    {
+      "language": "English",
+      "languageCode": "en",
+      "device": "iPhone 8",
+      "resolution": "375x667",
+      "status": "ERROR",
+      "error": "net::ERR_CONNECTION_REFUSED at http://localhost:8080/index-en.html"
+    },
+    {
+      "language": "English",
+      "languageCode": "en",
+      "device": "iPhone 12",
+      "resolution": "390x844",
+      "status": "ERROR",
+      "error": "net::ERR_CONNECTION_REFUSED at http://localhost:8080/index-en.html"
+    },
+    {
+      "language": "English",
+      "languageCode": "en",
+      "device": "iPhone 14 Pro Max",
+      "resolution": "430x932",
+      "status": "ERROR",
+      "error": "net::ERR_CONNECTION_REFUSED at http://localhost:8080/index-en.html"
+    },
+    {
+      "language": "English",
+      "languageCode": "en",
+      "device": "Galaxy S20",
+      "resolution": "360x800",
+      "status": "ERROR",
+      "error": "net::ERR_CONNECTION_REFUSED at http://localhost:8080/index-en.html"
+    },
+    {
+      "language": "English",
+      "languageCode": "en",
+      "device": "Pixel 5",
+      "resolution": "393x851",
+      "status": "ERROR",
+      "error": "net::ERR_CONNECTION_REFUSED at http://localhost:8080/index-en.html"
+    },
+    {
+      "language": "English",
+      "languageCode": "en",
+      "device": "iPad Mini",
+      "resolution": "768x1024",
+      "status": "ERROR",
+      "error": "net::ERR_CONNECTION_REFUSED at http://localhost:8080/index-en.html"
+    },
+    {
+      "language": "English",
+      "languageCode": "en",
+      "device": "iPad Air",
+      "resolution": "820x1180",
+      "status": "ERROR",
+      "error": "net::ERR_CONNECTION_REFUSED at http://localhost:8080/index-en.html"
+    },
+    {
+      "language": "English",
+      "languageCode": "en",
+      "device": "iPad Pro 11",
+      "resolution": "834x1194",
+      "status": "ERROR",
+      "error": "net::ERR_CONNECTION_REFUSED at http://localhost:8080/index-en.html"
+    },
+    {
+      "language": "English",
+      "languageCode": "en",
+      "device": "iPad Pro 12.9",
+      "resolution": "1024x1366",
+      "status": "ERROR",
+      "error": "net::ERR_CONNECTION_REFUSED at http://localhost:8080/index-en.html"
+    },
+    {
+      "language": "English",
+      "languageCode": "en",
+      "device": "Laptop",
+      "resolution": "1366x768",
+      "status": "ERROR",
+      "error": "net::ERR_CONNECTION_REFUSED at http://localhost:8080/index-en.html"
+    },
+    {
+      "language": "English",
+      "languageCode": "en",
+      "device": "Desktop HD",
+      "resolution": "1920x1080",
+      "status": "ERROR",
+      "error": "net::ERR_CONNECTION_REFUSED at http://localhost:8080/index-en.html"
+    },
+    {
+      "language": "English",
+      "languageCode": "en",
+      "device": "Desktop 2K",
+      "resolution": "2560x1440",
+      "status": "ERROR",
+      "error": "net::ERR_CONNECTION_REFUSED at http://localhost:8080/index-en.html"
+    },
+    {
+      "language": "English",
+      "languageCode": "en",
+      "device": "Desktop 4K",
+      "resolution": "3840x2160",
+      "status": "ERROR",
+      "error": "net::ERR_CONNECTION_REFUSED at http://localhost:8080/index-en.html"
+    },
+    {
+      "language": "Japanese",
+      "languageCode": "ja",
+      "device": "iPhone SE",
+      "resolution": "320x568",
+      "status": "ERROR",
+      "error": "net::ERR_CONNECTION_REFUSED at http://localhost:8080/index-ja.html"
+    },
+    {
+      "language": "Japanese",
+      "languageCode": "ja",
+      "device": "iPhone 8",
+      "resolution": "375x667",
+      "status": "ERROR",
+      "error": "net::ERR_CONNECTION_REFUSED at http://localhost:8080/index-ja.html"
+    },
+    {
+      "language": "Japanese",
+      "languageCode": "ja",
+      "device": "iPhone 12",
+      "resolution": "390x844",
+      "status": "ERROR",
+      "error": "net::ERR_CONNECTION_REFUSED at http://localhost:8080/index-ja.html"
+    },
+    {
+      "language": "Japanese",
+      "languageCode": "ja",
+      "device": "iPhone 14 Pro Max",
+      "resolution": "430x932",
+      "status": "ERROR",
+      "error": "net::ERR_CONNECTION_REFUSED at http://localhost:8080/index-ja.html"
+    },
+    {
+      "language": "Japanese",
+      "languageCode": "ja",
+      "device": "Galaxy S20",
+      "resolution": "360x800",
+      "status": "ERROR",
+      "error": "net::ERR_CONNECTION_REFUSED at http://localhost:8080/index-ja.html"
+    },
+    {
+      "language": "Japanese",
+      "languageCode": "ja",
+      "device": "Pixel 5",
+      "resolution": "393x851",
+      "status": "ERROR",
+      "error": "net::ERR_CONNECTION_REFUSED at http://localhost:8080/index-ja.html"
+    },
+    {
+      "language": "Japanese",
+      "languageCode": "ja",
+      "device": "iPad Mini",
+      "resolution": "768x1024",
+      "status": "ERROR",
+      "error": "net::ERR_CONNECTION_REFUSED at http://localhost:8080/index-ja.html"
+    },
+    {
+      "language": "Japanese",
+      "languageCode": "ja",
+      "device": "iPad Air",
+      "resolution": "820x1180",
+      "status": "ERROR",
+      "error": "net::ERR_CONNECTION_REFUSED at http://localhost:8080/index-ja.html"
+    },
+    {
+      "language": "Japanese",
+      "languageCode": "ja",
+      "device": "iPad Pro 11",
+      "resolution": "834x1194",
+      "status": "ERROR",
+      "error": "net::ERR_CONNECTION_REFUSED at http://localhost:8080/index-ja.html"
+    },
+    {
+      "language": "Japanese",
+      "languageCode": "ja",
+      "device": "iPad Pro 12.9",
+      "resolution": "1024x1366",
+      "status": "ERROR",
+      "error": "net::ERR_CONNECTION_REFUSED at http://localhost:8080/index-ja.html"
+    },
+    {
+      "language": "Japanese",
+      "languageCode": "ja",
+      "device": "Laptop",
+      "resolution": "1366x768",
+      "status": "ERROR",
+      "error": "net::ERR_CONNECTION_REFUSED at http://localhost:8080/index-ja.html"
+    },
+    {
+      "language": "Japanese",
+      "languageCode": "ja",
+      "device": "Desktop HD",
+      "resolution": "1920x1080",
+      "status": "ERROR",
+      "error": "net::ERR_CONNECTION_REFUSED at http://localhost:8080/index-ja.html"
+    },
+    {
+      "language": "Japanese",
+      "languageCode": "ja",
+      "device": "Desktop 2K",
+      "resolution": "2560x1440",
+      "status": "ERROR",
+      "error": "net::ERR_CONNECTION_REFUSED at http://localhost:8080/index-ja.html"
+    },
+    {
+      "language": "Japanese",
+      "languageCode": "ja",
+      "device": "Desktop 4K",
+      "resolution": "3840x2160",
+      "status": "ERROR",
+      "error": "net::ERR_CONNECTION_REFUSED at http://localhost:8080/index-ja.html"
+    }
+  ]
+}
